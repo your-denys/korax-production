@@ -10,7 +10,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import "swiper/css/scrollbar";
-import { Mousewheel, Pagination } from 'swiper';
+import { Mousewheel } from 'swiper';
 
 function HomePage() {
 
