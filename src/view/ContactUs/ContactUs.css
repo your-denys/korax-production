@@ -1,0 +1,67 @@
+.contactUs-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer {
+  background-color: #fff;
+}
+.footer-text {
+  color: #161616;
+}
+.footer-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+.footer p {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 769px) {
+  .contactUs-page {
+    position: relative;
+    height: 100vh;
+    background-color: #161616;
+    padding-top: 160px;
+  }
+  .footer {
+    margin-top: 100px;
+  }
+  .footer-text {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer-wrapper {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contactUs-page {
+    position: relative;
+    background-color: #161616;
+  }
+  .footer {
+    margin-top: 150px;
+  }
+  .footer-text {
+    margin-left: auto;
+    margin-right: 0;
+  }
+  .footer-wrapper {
+    padding-top: 30px;
+    padding-bottom: 30px;
+   }
+}
+
+@media screen and (max-height:940px) and (min-width:800px) {
+  .footer {
+    margin-top: 40px;
+}
+.footer-wrapper {
+  padding-top: 30px;
+  padding-bottom: 30px;
+ }
+}

@@ -1,0 +1,111 @@
+.blocks-description-border {
+  padding-bottom: 50px;
+  padding-top: 20px;
+}
+.about-us .blocks-description {
+  font-weight: 600;
+  font-size: 90px;
+  line-height: 90px;
+  width: 90%;
+}
+.about-us {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.about-us-content {
+  width: 65%;
+  align-self: flex-end;
+  margin-top: auto;
+  margin-bottom: 70px;
+}
+.about-us-content p {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 28px;
+  text-align: right;
+  font-family: 'Consolas';
+}
+.about-span {
+  padding-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .about-us .blocks-description {
+    font-weight: 600;
+    font-size: 35px !important;
+    line-height: 40px !important;
+    width: 90%;
+  }
+  .about-us-content {
+    width: 90%;
+    align-self: flex-end;
+    margin-top: 40px;
+  }
+  .about-us-content p {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;
+  }
+  .blocks-description {
+    font-size: 27px;
+  }
+  .blocks-description-border {
+    padding-top: 10px;
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 1460px) {
+  .about-us-content p {
+    font-size: 20px;
+    line-height: 40px;
+
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about-us .blocks-description {
+    font-weight: 600;
+    font-size: 90px;
+    line-height: 90px;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .about-us .border-dashed {
+    margin-bottom: 30px !important;
+  }
+  .about-us .blocks-description {
+    font-size: 60px;
+    line-height: 59px;
+  }
+    
+}
+@media screen and (max-width: 992px) {
+  .blocks-description {
+    width: 90%;
+  }
+  .about-us .border-dashed {
+    margin-bottom: 30px !important;
+  }
+}
+@media screen and (max-height: 940px) and (min-width: 800px) {
+  .blocks-description {
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 120.6%;
+  }
+  .about-us-content {
+    padding-top: 20px !important;
+  }
+}
+
+@media screen and (max-height: 920px) {
+  .blocks-description-border {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    
+  }
+
+}

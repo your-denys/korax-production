@@ -1,0 +1,98 @@
+.platform {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.platform-form {
+  width: 540px;
+  padding: 40px;
+  background-color: #1d1d1d !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+}
+.modal-content {
+  padding: 0 40px;
+  width: 70% !important;
+  margin: 0 auto;
+}
+
+.modal-title {
+  color: white;
+  font-size: 4rem !important;
+  font-weight: 600 !important;
+  margin-bottom: 20px;
+  text-align: center;
+  padding-bottom:20px;
+  width: 100%;
+}
+
+
+ label {
+  font-family: 'Consolas';
+  font-weight: 400;
+  font-size: 16px;
+  color: #b8b8b8;
+}
+.input {
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  padding: 15px;
+  border-bottom: 1px solid #ffffff;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.modal-footer {
+  padding-top: 30px;
+  width: 100%;
+  border: none ;
+  display: flex;
+  justify-content: space-between ;
+  align-items: center;
+}
+.platform-form button {
+  font-weight: 400;
+  font-size: 23px;
+  transition: all 0.5s;
+}
+.platform-form button:hover {
+ opacity: 0.6;
+
+}
+@media screen and (max-width: 567px) {
+  .platform-form {
+    width: 375px;
+  }
+    .modal-content {
+        width: 90% !important;
+    }
+    .modal-title {
+        font-size: 3rem !important;
+    }
+    .modal-footer button {
+        font-size: 25px;
+      }
+}
+
+@media screen and (max-height:1000px) and (min-width:800px){
+  .platform {
+    justify-content: flex-start;
+  }
+  .platform-form {
+    margin-top: 70px;
+    padding: 20px 40px;
+  }
+  .modal-title {
+    color: white;
+    font-size: 4rem !important;
+    font-weight: 600 !important;
+    margin-bottom: 10px;
+    text-align: center;
+    padding-bottom:0px;
+    width: 100%;
+  }
+}

@@ -1,0 +1,49 @@
+.koraxAI {
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+    padding-top: 40px;
+}
+.koraxAI-content {
+    width: 50%;
+    align-self: center;
+}
+.koraxAI-content > * {
+    color: #161616;
+}
+.koraxAI-title {
+    font-weight: 600;
+    font-size: 48px;
+    margin-bottom: 2rem;
+}
+.koraxAI-subtitle {
+    font-size: 23px;
+    margin-bottom: 2rem;
+    line-height: 34px;
+
+}
+.koraxAI-text {
+    font-size: 17px;
+    line-height: 24px;
+
+}
+
+@media screen and (max-width: 768px) {
+    .koraxAI {
+        justify-content: flex-start;
+        gap: 20px;
+    }
+    .koraxAI-content {
+        width: 100%;
+    }
+    .koraxAI-title {
+        font-size: 36px;
+    }
+    .koraxAI-subtitle {
+        font-size: 18px;
+    }
+    .koraxAI-text {
+        font-size: 16px;
+    }
+ 
+}

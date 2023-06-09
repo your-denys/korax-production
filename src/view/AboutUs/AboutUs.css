@@ -1,0 +1,15 @@
+.aboutUs-page .container {
+    height: 100%;
+}
+@media screen and (min-width: 1200px) {
+    .aboutUs-page{
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+    }
+} 
+@media screen and (max-width: 1199px) {
+    .aboutUs-page{
+        position: relative;
+    }
+} 

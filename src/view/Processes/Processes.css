@@ -1,0 +1,13 @@
+@media screen and (min-width: 769px) {
+    .processes-page {
+        position: relative;
+        height: 100vh;
+    }
+} 
+@media screen and (max-width: 768px) {
+    .processes-page {
+        padding-bottom: 20px;
+        position: relative;
+        height: auto;
+    }
+} 

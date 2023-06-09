@@ -1,0 +1,22 @@
+.road-page {
+    background-color: #fff;
+}
+.road-page .container {
+    height: 100%;
+}
+@media screen and (min-width: 1199px) and (min-height: 960px){
+    .road-page {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        background-color: #fff;
+
+    }
+} 
+    
+@media screen and (max-width: 1198px) {
+    .road-page {
+        position: relative;
+        background-color: #fff;
+    }
+}

@@ -1,0 +1,22 @@
+@media screen and (min-width: 769px) {
+    .koraxAI-page{
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        background-color: #fff;
+        
+    }
+    .koraxAI-page .container, .container-lg, .container-md, .container-s {
+        height: 100% !important;
+    }
+} 
+@media screen and (max-width: 768px) {
+    .koraxAI-page{
+        margin-top: 80px;
+        position: relative;
+        height: 100vh; 
+        background-color: #fff;
+    }
+} 
+
+
