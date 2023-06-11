@@ -2,6 +2,9 @@
     .processes-page {
         position: relative;
         height: 100vh;
+        overflow-y: clip;
+        overflow-x: clip;
+
     }
 } 
 @media screen and (max-width: 768px) {
@@ -9,5 +12,8 @@
         padding-bottom: 20px;
         position: relative;
         height: auto;
+        overflow-y: clip;
+        overflow-x: clip;
+
     }
 } 

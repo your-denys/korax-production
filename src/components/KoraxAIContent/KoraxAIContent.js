@@ -1,10 +1,21 @@
 import React from 'react';
 import './KoraxAIContent.css';
 import { motion } from 'framer-motion';
+import solid from '../../assets/glitch-max-compression.mp4';
 
 const KoraxAIContent = () => {
   return (
     <section className="koraxAI">
+      <article className='koraxAI-content solid-bg'>
+      <video
+          autoPlay
+          muted
+          loop
+          src={solid}
+          type="video/mp4"
+          playsInline
+        />
+      </article>
       <article className="koraxAI-content">
         <motion.h2
           initial={{ y: -100, opacity: 0 }}

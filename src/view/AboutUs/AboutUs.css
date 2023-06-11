@@ -6,10 +6,15 @@
         position: relative;
         width: 100vw;
         height: 100vh;
+        overflow-y: clip;
+        overflow-x: clip;
     }
 } 
 @media screen and (max-width: 1199px) {
     .aboutUs-page{
         position: relative;
+        overflow-y: clip;
+        overflow-x: clip;
+
     }
 } 

@@ -1,12 +1,22 @@
 .koraxAI {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     height: 100%;
     padding-top: 40px;
+    flex-wrap: wrap;
 }
 .koraxAI-content {
-    width: 50%;
     align-self: center;
+    width: 50%;
+    position: relative;
+}
+.koraxAI-content video {
+    position: absolute;
+    width: 131%;
+    bottom: -530px;
+    right: -50px;
+
+    
 }
 .koraxAI-content > * {
     color: #161616;
@@ -28,13 +38,33 @@
 
 }
 
+@media screen and (max-width:992px) {
+    .koraxAI-content video {
+        position: absolute;
+        width: 157%;
+        bottom: -383px;
+        right: -9px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .koraxAI {
-        justify-content: flex-start;
+        justify-content: center;
         gap: 20px;
+        flex-direction: column;
+        align-items: center;
     }
     .koraxAI-content {
         width: 100%;
+    }
+    .solid-bg {
+        margin-bottom: 190px;
+    }
+    .koraxAI-content video {
+        position: absolute;
+        width: 111%;
+        bottom: -352px;
+        right: -10px;
     }
     .koraxAI-title {
         font-size: 36px;

@@ -4,6 +4,9 @@
         width: 100vw;
         height: 100vh;
         background-color: #fff;
+        overflow-y: clip;
+        overflow-x: clip;
+
         
     }
     .koraxAI-page .container, .container-lg, .container-md, .container-s {
@@ -16,6 +19,10 @@
         position: relative;
         height: 100vh; 
         background-color: #fff;
+        overflow-y: clip;
+        overflow-x: clip;
+
+
     }
 } 
 
