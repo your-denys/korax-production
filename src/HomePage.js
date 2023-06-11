@@ -1,3 +1,4 @@
+import {useState, useRef, useEffect } from 'react';
 import './App.css';
 import Home from './view/Home/Home';
 import KoraxAI from './view/KoraxAI/KoraxAI';
@@ -14,11 +15,22 @@ import { Mousewheel } from 'swiper';
 
 function HomePage() {
 
+  const [activeSlide, setActiveSlide] = useState(0);
+  const swiperRef = useRef(null);
+  const handleSlideChange = (slideIndex) => {
+    setActiveSlide(slideIndex);
+  };
+  useEffect(() => {
+    if (swiperRef.current) {
+      swiperRef.current.swiper.slideTo(activeSlide);
+    }
+  }, [activeSlide]);
+
   return (
     <div className="App">
       <div className='app-mobile'>
         <div className='app-block' >
-          <Home />
+          <Home handleSlideChange={handleSlideChange} />
         </div>
         <div className='app-block' style={{backgroundColor:'#fff  !important'}} >
           <KoraxAI />
@@ -46,6 +58,8 @@ function HomePage() {
         mousewheel={true}
         modules={[Mousewheel]}
         className="mySwiper"
+        ref={swiperRef}
+
       >
         <SwiperSlide className='app-block' id="home">
           <Home />

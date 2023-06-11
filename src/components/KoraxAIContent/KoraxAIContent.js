@@ -1,7 +1,7 @@
 import React from 'react';
 import './KoraxAIContent.css';
 import { motion } from 'framer-motion';
-import solid from '../../assets/glitch-max-compression.mp4';
+import solid from '../../assets/solid-norm-compression.mp4';
 
 const KoraxAIContent = () => {
   return (

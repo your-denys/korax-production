@@ -8,7 +8,7 @@ import Header from '../../components/Header/Header';
 
 
 
-const Home = () => {
+const Home = ({handleSlideChange}) => {
 
   return (
     <motion.div
@@ -19,7 +19,7 @@ const Home = () => {
       <Header/>
       <Container>
         <HomeContent />
-        <Navigation />
+        <Navigation handleNav={handleSlideChange} />
         <motion.div
         initial={{ width: 0 }}
         whileInView={{ width: '100%' }}
