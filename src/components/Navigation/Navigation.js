@@ -1,30 +1,26 @@
 import Nav from 'react-bootstrap/Nav';
 import './Navigation.css';
 import { motion } from 'framer-motion';
-import { useState } from 'react';
+import { useSwiper } from 'swiper/react';
 
 
-const Navigation = ({handleNav}) => {
+const Navigation = () => {
 
+  const swiper = useSwiper();
 
-    const [activeSlide, setActiveSlide] = useState(0);
-  const handleSlideChange = (slideIndex) => {
-    setActiveSlide(slideIndex);
-    handleNav(activeSlide);
-  };
   return (
-     <motion.div 
-    initial={{opacity: 0}}
-    animate={{opacity: 1}}
-    transition={{duration:1}}
-    className='navigation'>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      className='navigation'>
       <Nav className="me-auto">
-        <Nav.Link onClick={() => handleSlideChange(1)} >Korax AI</Nav.Link>
-        <Nav.Link onClick={() => handleSlideChange(2)} >Processes</Nav.Link>
-        <Nav.Link onClick={() => handleSlideChange(3)} >About us</Nav.Link>
-        <Nav.Link onClick={() => handleSlideChange(4)} >Road map</Nav.Link>
-        <Nav.Link onClick={() => handleSlideChange(5)}>Projects News</Nav.Link>
-        <Nav.Link onClick={() => handleSlideChange(6)} >Contact</Nav.Link>
+        <Nav.Link onClick={() => swiper.slideNext()} >Korax AI</Nav.Link>
+        <Nav.Link onClick={() => swiper.slideTo(2)} >Processes</Nav.Link>
+        <Nav.Link onClick={() => swiper.slideTo(3)} >About us</Nav.Link>
+        <Nav.Link onClick={() => swiper.slideTo(4)} >Road map</Nav.Link>
+        <Nav.Link onClick={() => swiper.slideTo(5)}>Projects News</Nav.Link>
+        <Nav.Link onClick={() => swiper.slideTo(6)} >Contact</Nav.Link>
       </Nav>
     </motion.div>
   );

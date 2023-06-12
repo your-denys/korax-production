@@ -3,8 +3,12 @@ import Nav from 'react-bootstrap/Nav';
 import './HomeContent.css';
 import video from '../../assets/video.mp4';
 import { motion } from 'framer-motion';
+import { useSwiper } from 'swiper/react';
 
 const HomeContent = () => {
+
+  const swiper = useSwiper();
+
   return (
     <section className="home-content">
       <article className="content-wrapper">
@@ -42,7 +46,7 @@ const HomeContent = () => {
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ delay: 0.3, duration: 1 }}
         >
-          <Nav.Link className="contact-us" href="#contact-us">
+          <Nav.Link onClick={()=> swiper.slideTo(6)} className="contact-us">
             <span>CONTACT US</span>
           </Nav.Link>
         </motion.div>

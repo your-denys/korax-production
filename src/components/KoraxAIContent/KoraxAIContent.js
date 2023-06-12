@@ -1,7 +1,7 @@
 import React from 'react';
 import './KoraxAIContent.css';
 import { motion } from 'framer-motion';
-import solid from '../../assets/solid-norm-compression.mp4';
+import solid from '../../assets/solid-low-compression.mp4';
 
 const KoraxAIContent = () => {
   return (
@@ -46,10 +46,10 @@ const KoraxAIContent = () => {
           Korax AI leverages the most cutting-edge scientific methods,
           including quantitative finance, machine learning, and
           behavioral finance, to develop a tailored fintech investment
-          solution. Korax. Korax AI rapidly digests enormous volumes
+          solution. Korax AI rapidly digests enormous volumes
           of data and makes intelligent, real-time trading decisions,
           allowing its client to take advantage over traditional
-          human-based technique.Banks, asset managers, and brokers can
+          human-based technique. <br/> <br/>Banks, asset managers, and brokers can
           use Korax AI to enhance their trading processes and provide
           clients with innovative investment options. Korax AI's
           collection of diverse algorithms covers many financial
