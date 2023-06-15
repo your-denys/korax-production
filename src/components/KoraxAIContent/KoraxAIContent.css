@@ -1,7 +1,7 @@
 .koraxAI {
     display: flex;
     justify-content: space-between;
-    height: 100%;
+    height: 100vh;
     padding-top: 40px;
     flex-wrap: wrap;
 }
