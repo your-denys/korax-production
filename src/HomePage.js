@@ -42,8 +42,12 @@ function HomePage() {
       <Swiper
         direction={"vertical"}
         slidesPerView={1}
-        spaceBetween={400}
-        mousewheel={true}
+        spaceBetween={0}
+          mousewheel={{
+            enabled: true,
+            thresholdTime: 300,
+            releaseOnEdges: true,
+          }}
         modules={[Mousewheel]}
         className="mySwiper"
       >

@@ -17,15 +17,15 @@ const KoraxAIContent = () => {
         />
       </article>
       <article className="koraxAI-content">
-        <motion.h2
-          initial={{ y: -100, opacity: 0 }}
-          transition={{ delay: 0.1, duration: 0.5 }}
-          whileInView={{ y: 0, opacity: 1 }}
+        <h2
+          // initial={{ y: -100, opacity: 0 }}
+          // transition={{ delay: 0.1, duration: 0.5 }}
+          // whileInView={{ y: 0, opacity: 1 }}
           // viewport={{ once: true }}
           className="koraxAI-title"
         >
           What is KORAX AI?
-        </motion.h2>
+        </h2>
         <motion.h3
           initial={{ y: -100, opacity: 0 }}
           transition={{ delay: 0.3, duration: 0.7 }}
