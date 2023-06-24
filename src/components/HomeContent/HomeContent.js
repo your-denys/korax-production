@@ -68,7 +68,7 @@ const HomeContent = () => {
           src={video}
           type="video/mp4"
           playsInline
-          onLoadedData={handleVideoLoad}
+          onLoadedData={handleVideoLoad} controls
          style={{ display:videoLoaded ? 'block' : 'none' }}
         />
 
