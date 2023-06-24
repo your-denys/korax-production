@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  overflow-y: clip;
-  overflow-x: clip;
+  overflow-y: hidden;
+  overflow-x: hidden;
 
 }
 .footer {

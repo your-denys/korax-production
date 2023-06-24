@@ -1,8 +1,8 @@
 @media screen and (min-width:992px) and (min-height:780px) {
     .home-page {
         height: 100vh;
-        overflow-y: clip;
-        overflow-x: clip;
+        overflow-y: hidden;
+        overflow-x: hidden;
 
 
     }
@@ -11,8 +11,8 @@
     .home-page {
         position: relative;
         width: 100vw;
-        overflow-y: clip;
-        overflow-x: clip;
+        overflow-y: hidden;
+        overflow-x: hidden;
 
     }
 } 
@@ -21,8 +21,8 @@
 .home-page {
     position: relative;
     z-index: 1;
-    overflow-y: clip;
-    overflow-x: clip;
+    overflow-y: hidden;
+    overflow-x: hidden;
 
 }
 

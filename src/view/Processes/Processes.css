@@ -2,8 +2,8 @@
     .processes-page {
         position: relative;
         height: 100vh;
-        overflow-y: clip;
-        overflow-x: clip;
+        overflow-y: hidden;
+        overflow-x: hidden;
 
     }
 } 
@@ -12,8 +12,8 @@
         padding-bottom: 20px;
         position: relative;
         height: auto;
-        overflow-y: clip;
-        overflow-x: clip;
+        overflow-y: hidden;
+        overflow-x: hidden;
 
     }
 } 

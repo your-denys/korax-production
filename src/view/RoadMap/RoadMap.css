@@ -1,7 +1,7 @@
 .road-page {
     background-color: #fff;
-    overflow-y: clip;
-    overflow-x: clip;
+    overflow-y: hidden;
+    overflow-x: hidden;
 
 }
 .road-page .container {
@@ -13,7 +13,7 @@
         width: 100vw;
         height: 100vh;
         background-color: #fff;
-        overflow-y: clip;
+        overflow-y: hidden;
     }
 } 
     
@@ -21,6 +21,6 @@
     .road-page {
         position: relative;
         background-color: #fff;
-        overflow-y: clip;
+        overflow-y: hidden;
     }
 }

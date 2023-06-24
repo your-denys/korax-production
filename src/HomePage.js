@@ -42,39 +42,40 @@ function HomePage() {
       <Swiper
         direction={"vertical"}
         slidesPerView={1}
-        spaceBetween={0}
-          mousewheel={{
-            enabled: true,
-            thresholdTime: 300,
-            releaseOnEdges: true,
-          }}
+        spaceBetween={30}
+        mousewheel={{
+          enabled: true,
+          thresholdTime: 300,
+          releaseOnEdges: true,
+        }}
+        autoHeight={true}
         modules={[Mousewheel]}
+        preventClicks={false}
         className="mySwiper"
       >
-        <SwiperSlide className='app-block' id="home">
+        <SwiperSlide className='app-block'>
           <Home />
         </SwiperSlide>
-        <SwiperSlide className='app-block app-bg' id="koraxAI">
+        <SwiperSlide className='app-block app-bg'>
           <KoraxAI />
         </SwiperSlide>
-        <SwiperSlide className='app-block' id="processes">
+        <SwiperSlide className='app-block'>
           <Processes />
         </SwiperSlide>
-        <SwiperSlide className='app-block' id="about-us">
+        <SwiperSlide className='app-block'>
           <AboutUs />
         </SwiperSlide>
-        <SwiperSlide className='app-block app-bg' id="road-map">
+        <SwiperSlide className='app-block app-bg'>
           <RoadMap />
         </SwiperSlide>
-        <SwiperSlide className='app-block' id="projects">
+        <SwiperSlide className='app-block'>
           <Projects />
         </SwiperSlide>
-        <SwiperSlide className='app-block' id="contact-us">
+        <SwiperSlide className='app-block'>
           <ContactUs />
         </SwiperSlide>
       </Swiper>
     </div>
-    // </MyContext.Provider>
   );
 }
 

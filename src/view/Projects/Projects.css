@@ -4,8 +4,8 @@
     width: 100vw;
     height: 100vh;
     background-color: #161616;
-    overflow-y: clip;
-    overflow-x: clip;
+    overflow-y: hidden;
+    overflow-x: hidden;
 
   }
 }
@@ -15,8 +15,8 @@
     height: 100%;
     position: relative;
     background-color: #161616;
-    overflow-y: clip;
-    overflow-x: clip;
+    overflow-y: hidden;
+    overflow-x: hidden;
 
   }
 }

@@ -1,13 +1,14 @@
 import React from 'react';
 import './KoraxAIContent.css';
 import { motion } from 'framer-motion';
-import solid from '../../assets/solid-low-compression.mp4';
+import solid from '../../assets/wawes-comp.mp4';
 
 const KoraxAIContent = () => {
   return (
     <section className="koraxAI">
       <article className='koraxAI-content solid-bg'>
       <video
+        preload='metadata'
           autoPlay
           muted
           loop
@@ -16,12 +17,12 @@ const KoraxAIContent = () => {
           playsInline
         />
       </article>
-      <article className="koraxAI-content">
+      <article className="koraxAI-content" style={{position: 'relative', zIndex:2222}}>
         <h2
-          // initial={{ y: -100, opacity: 0 }}
-          // transition={{ delay: 0.1, duration: 0.5 }}
-          // whileInView={{ y: 0, opacity: 1 }}
-          // viewport={{ once: true }}
+          initial={{ y: -100, opacity: 0 }}
+          transition={{ delay: 0.1, duration: 0.5 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
           className="koraxAI-title"
         >
           What is KORAX AI?
@@ -30,7 +31,6 @@ const KoraxAIContent = () => {
           initial={{ y: -100, opacity: 0 }}
           transition={{ delay: 0.3, duration: 0.7 }}
           whileInView={{ y: 0, opacity: 1 }}
-          // viewport={{ once: true }}
           className="koraxAI-subtitle"
         >
           TRANSFORMING INVESTMENTS WITH CUSTOMIZABLE AI TRADING
@@ -40,7 +40,6 @@ const KoraxAIContent = () => {
           initial={{ x: 100, opacity: 0 }}
           transition={{ delay: 0.4, duration: 0.9 }}
           whileInView={{ x: 0, opacity: 1 }}
-          // viewport={{ once: true }}
           className="koraxAI-text"
         >
           Korax AI leverages the most cutting-edge scientific methods,

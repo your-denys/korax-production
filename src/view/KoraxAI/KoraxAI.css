@@ -2,10 +2,9 @@
     .koraxAI-page{
         position: relative;
         width: 100vw;
-        height: 100vh;
+        /* height: 100vh; */
         background-color: #fff;
-        overflow-y: clip;
-        overflow-x: clip;
+        overflow: hidden;
 
         
     }
@@ -17,10 +16,11 @@
     .koraxAI-page{
         margin-top: 80px;
         position: relative;
-        height: 100vh; 
+        height: 100%; 
         background-color: #fff;
-        overflow-y: clip;
-        overflow-x: clip;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        padding-bottom: 30px;
 
 
     }
