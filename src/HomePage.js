@@ -45,8 +45,9 @@ function HomePage() {
         spaceBetween={30}
         mousewheel={{
           enabled: true,
-          thresholdTime: 300,
+          thresholdTime: 500,
           releaseOnEdges: true,
+          sensitivity:10
         }}
         autoHeight={true}
         modules={[Mousewheel]}
