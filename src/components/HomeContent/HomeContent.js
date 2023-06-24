@@ -71,7 +71,7 @@ const HomeContent = () => {
           onLoadedData={handleVideoLoad}
          style={{ display:videoLoaded ? 'block' : 'none' }}
         />
-
+ {!videoLoaded ?? <p> Loading...</p>}
       </motion.article>
     </section>
   );
