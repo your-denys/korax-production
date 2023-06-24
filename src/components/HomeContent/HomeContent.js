@@ -1,14 +1,17 @@
-import React from 'react';
 import Nav from 'react-bootstrap/Nav';
 import './HomeContent.css';
 import video from '../../assets/video.mp4';
 import { motion } from 'framer-motion';
 import { useSwiper } from 'swiper/react';
+import { useState } from 'react';
 
 const HomeContent = () => {
+  const [videoLoaded, setVideoLoaded] = useState(false);
 
   const swiper = useSwiper();
-
+  const handleVideoLoad = () => {
+    setVideoLoaded(true);
+  };
   return (
     <section className="home-content">
       <article className="content-wrapper">
@@ -46,7 +49,7 @@ const HomeContent = () => {
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ delay: 0.3, duration: 1 }}
         >
-          <Nav.Link onClick={()=> swiper.slideTo(6)} className="contact-us">
+          <Nav.Link onClick={() => swiper.slideTo(6)} className="contact-us">
             <span>CONTACT US</span>
           </Nav.Link>
         </motion.div>
@@ -65,7 +68,10 @@ const HomeContent = () => {
           src={video}
           type="video/mp4"
           playsInline
+          onLoadedData={handleVideoLoad}
+         style={{ display:videoLoaded ? 'block' : 'none' }}
         />
+
       </motion.article>
     </section>
   );

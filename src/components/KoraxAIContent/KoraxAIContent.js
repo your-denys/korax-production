@@ -2,8 +2,17 @@ import React from 'react';
 import './KoraxAIContent.css';
 import { motion } from 'framer-motion';
 import solid from '../../assets/wawes-comp.mp4';
+import { useState } from 'react';
+
 
 const KoraxAIContent = () => {
+  
+  const [videoLoaded, setVideoLoaded] = useState(false);
+
+  const handleVideoLoad = () => {
+    setVideoLoaded(true);
+  };
+
   return (
     <section className="koraxAI">
       <article className='koraxAI-content solid-bg'>
@@ -15,6 +24,8 @@ const KoraxAIContent = () => {
           src={solid}
           type="video/mp4"
           playsInline
+          onLoadedData={handleVideoLoad} 
+          style={{ display:videoLoaded ? 'block' : 'none' }}
         />
       </article>
       <article className="koraxAI-content" style={{position: 'relative', zIndex:2222}}>
