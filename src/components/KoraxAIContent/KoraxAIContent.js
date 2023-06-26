@@ -28,7 +28,7 @@ const KoraxAIContent = () => {
           style={{ display:videoLoaded ? 'block' : 'none' }}
         />
       </article>
-      <article className="koraxAI-content" style={{position: 'relative', zIndex:2222}}>
+      <article className="koraxAI-content" style={{position: 'relative', zIndex:2222, marginTop:'11rem'}}>
         <h2
           initial={{ y: -100, opacity: 0 }}
           transition={{ delay: 0.1, duration: 0.5 }}

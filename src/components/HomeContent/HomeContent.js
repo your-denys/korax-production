@@ -59,7 +59,8 @@ const HomeContent = () => {
         whileInView={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.5 }}
         className="wrapper-video"
-      >
+        >
+        {!videoLoaded && <p> Loading...</p>}
         <video
           className="video"
           autoPlay
@@ -69,9 +70,8 @@ const HomeContent = () => {
           type="video/mp4"
           playsInline
           onLoadedData={handleVideoLoad}
-         style={{ display:videoLoaded ? 'block' : 'none' }}
+         style={{ display: videoLoaded ? 'block' : 'none' }}
         />
- {!videoLoaded ?? <p> Loading...</p>}
       </motion.article>
     </section>
   );

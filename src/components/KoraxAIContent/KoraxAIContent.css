@@ -54,9 +54,9 @@
     }
     .koraxAI-content video {
         width: 100%;
-        top: -430px;
+        height: auto;
+        top: -25px;
         bottom: 0;
-        
     }
     .koraxAI-title {
         font-size: 36px;
