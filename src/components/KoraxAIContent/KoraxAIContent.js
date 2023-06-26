@@ -7,10 +7,10 @@ import { useState } from 'react';
 
 const KoraxAIContent = () => {
   
-  const [videoLoaded, setVideoLoaded] = useState(false);
+  const [videoLoaded2, setVideoLoaded2] = useState(false);
 
   const handleVideoLoad = () => {
-    setVideoLoaded(true);
+    setVideoLoaded2(true);
   };
 
   return (
@@ -25,10 +25,11 @@ const KoraxAIContent = () => {
           type="video/mp4"
           playsInline
           onLoadedData={handleVideoLoad} 
-          style={{ display:videoLoaded ? 'block' : 'none' }}
+          style={{ display:videoLoaded2 ? 'block' : 'none' }}
         />
       </article>
-      <article className="koraxAI-content" style={{position: 'relative', zIndex:2222, marginTop:'11rem'}}>
+        {!videoLoaded2 && <p>Loading...</p>}
+      <article className="koraxAI-content" style={{position: videoLoaded2 && 'relative', zIndex:2222, marginTop:'11rem'}}>
         <h2
           initial={{ y: -100, opacity: 0 }}
           transition={{ delay: 0.1, duration: 0.5 }}

@@ -10,9 +10,31 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import "swiper/css/scrollbar";
-import { Mousewheel } from 'swiper';
+import 'swiper/swiper-bundle.css';
+import SwiperCore, { Mousewheel } from 'swiper/core';
+import UAParser from 'ua-parser-js';
+
 
 function HomePage() {
+  
+  SwiperCore.use([Mousewheel]);
+  const parser = new UAParser();
+  const browser = parser.getBrowser();
+  const isSafari = browser.name === 'Safari';
+  const slidesPerView = isSafari ? 'auto' : 1;
+  const mousewheelSettings = isSafari
+  ? {
+      eventsTarged: '.mySwiper',
+      releaseOnEdges: true,
+      sensitivity: 20,
+      thresholdDelta: 20,
+    }
+  : {
+      enabled: true,
+      thresholdTime: 500,
+      releaseOnEdges: true,
+      sensitivity: 10,
+    };
 
   return (
     <div className="App">
@@ -35,20 +57,15 @@ function HomePage() {
         <div className='app-block'>
           <Projects />
         </div>
-        <div className='app-block'>
+        <div className='app-block' id='contact'>
           <ContactUs />
         </div>
       </div>
       <Swiper
         direction={"vertical"}
-        slidesPerView={1}
+        slidesPerView={slidesPerView}
         spaceBetween={30}
-        mousewheel={{
-          enabled: true,
-          thresholdTime: 500,
-          releaseOnEdges: true,
-          sensitivity:10
-        }}
+        mousewheel={mousewheelSettings}
         autoHeight={true}
         modules={[Mousewheel]}
         preventClicks={false}

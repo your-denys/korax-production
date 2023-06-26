@@ -49,7 +49,7 @@ const HomeContent = () => {
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ delay: 0.3, duration: 1 }}
         >
-          <Nav.Link onClick={() => swiper.slideTo(6)} className="contact-us">
+          <Nav.Link onClick={() => swiper?.slideTo(6)} href='#contact' className="contact-us">
             <span>CONTACT US</span>
           </Nav.Link>
         </motion.div>

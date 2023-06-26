@@ -2,6 +2,7 @@ import React from 'react';
 import { Container } from 'react-bootstrap';
 
 const Footer = () => {
+  const year = new Date().getFullYear();
   return (
     <footer className="footer">
       <Container className="footer-wrapper">
@@ -20,7 +21,7 @@ const Footer = () => {
           </svg>
         </p>
         <p className="footer-text">
-          All copyrights Reserved. Korax 2023
+          All copyrights Reserved. Korax {year}
         </p>
       </Container>
     </footer>
