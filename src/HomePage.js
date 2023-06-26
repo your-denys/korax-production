@@ -21,19 +21,32 @@ function HomePage() {
   const parser = new UAParser();
   const browser = parser.getBrowser();
   const isSafari = browser.name === 'Safari';
-  const slidesPerView = isSafari ? 'auto' : 1;
+  const slidesPerView = 1;
+  // const slidesPerView = isSafari ? 'auto' : 1;
+  // const mousewheelSettings = isSafari
+  // ? {
+  //     eventsTarged: '.mySwiper',
+  //     releaseOnEdges: true,
+  //     sensitivity: 20,
+  //     thresholdDelta: 20,
+  //   }
+  // enabled: true,
+  // thresholdTime: 500,
+  // releaseOnEdges: true,
+  // sensitivity: 20,
+  //   };
   const mousewheelSettings = isSafari
   ? {
-      eventsTarged: '.mySwiper',
-      releaseOnEdges: true,
-      sensitivity: 20,
-      thresholdDelta: 20,
+    enabled: true,
+    thresholdTime: 500,
+    releaseOnEdges: true,
+    sensitivity: 20,
     }
   : {
       enabled: true,
       thresholdTime: 500,
       releaseOnEdges: true,
-      sensitivity: 10,
+      sensitivity: 20,
     };
 
   return (
