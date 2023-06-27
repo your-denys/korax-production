@@ -1,12 +1,9 @@
 .koraxAI {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     height: 100vh;
-    padding-top: 40px;
 }
 .koraxAI-content {
-    align-self: center;
     width: 50%;
     overflow: hidden;
 }

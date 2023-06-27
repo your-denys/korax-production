@@ -1,7 +1,7 @@
 import React from 'react';
 import './KoraxAIContent.css';
 import { motion } from 'framer-motion';
-import solid from '../../assets/wawes-comp.mp4';
+import solid from '../../assets/wawes.mp4';
 import { useState } from 'react';
 
 
