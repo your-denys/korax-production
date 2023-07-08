@@ -20,12 +20,12 @@ function HomePage() {
   useEffect(() => {
     const interval = setInterval(() => {
       setLoadNumb((prevLoadNumb) => prevLoadNumb + 1);
-    }, 30);
+    }, 50);
 
     const timeout = setTimeout(() => {
       clearInterval(interval);
       setLoading(false);
-    }, 3000);
+    }, 5000);
 
     return () => {
       clearInterval(interval);
