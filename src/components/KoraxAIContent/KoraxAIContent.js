@@ -33,7 +33,6 @@ const KoraxAIContent = () => {
         <h2
           initial={{ y: -100, opacity: 0 }}
           transition={{ delay: 0.1, duration: 0.5 }}
-          whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}
           className="koraxAI-title"
         >

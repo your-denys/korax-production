@@ -1,29 +1,10 @@
 import './ProcessesContent.css';
 import { motion } from 'framer-motion';
-// import { useEffect, useRef } from 'react';
 import  {useState } from 'react';
 
 const AnimationBlock = () => {
   const [description, setDescription] = useState('first');
-  // const ref = useRef(null);
-  // const [isVisible, setIsVisible] = useState(false);
 
-  // useEffect(() => {
-  //   const observer = new IntersectionObserver((entries) => {
-  //     const [entry] = entries;
-  //     setIsVisible(entry.isIntersecting);
-  //   });
-
-  //   if (ref.current) {
-  //     observer.observe(ref.current);
-  //   }
-
-  //   return () => {
-  //     if (ref.current) {
-  //       observer.unobserve(ref.current);
-  //     }
-  //   };
-  // }, []);
   return (
     <section className="processes-content">
       <article className="processes-title">

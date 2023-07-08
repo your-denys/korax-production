@@ -36,6 +36,7 @@ const AboutUsContent = () => {
           investments in long-term research and development, Korax
           strives to address the obstacles prevalent in these trading
           practices, thereby reshaping the market landscape.</p>
+          <br/>
          <p className='about-span'>
           Korax AI is dedicated to resolving challenges in real-time,
           utilizing a profound comprehension of the trading ecosystem,

@@ -9,38 +9,64 @@ import ContactUs from './view/ContactUs/ContactUs';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import "swiper/css/scrollbar";
+import 'swiper/css/scrollbar';
 import { Mousewheel } from 'swiper';
+import { useState, useEffect } from 'react';
 
 function HomePage() {
+  const [loading, setLoading] = useState(true);
+  const [loadNumb, setLoadNumb] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setLoadNumb((prevLoadNumb) => prevLoadNumb + 1);
+    }, 30);
+
+    const timeout = setTimeout(() => {
+      clearInterval(interval);
+      setLoading(false);
+    }, 3000);
+
+    return () => {
+      clearInterval(interval);
+      clearTimeout(timeout);
+    };
+  }, []);
 
   return (
     <div className="App">
-      <div className='app-mobile'>
-        <div className='app-block' >
+      {loading && <h2  className={'loading'}>{loadNumb}%</h2>}
+      <div className="app-mobile">
+        <div className="app-block">
           <Home />
         </div>
-        <div className='app-block' style={{ backgroundColor: '#fff  !important' }} >
+        <div
+          className="app-block"
+          style={{ backgroundColor: '#fff  !important' }}
+        >
           <KoraxAI />
         </div>
-        <div className='app-block'>
+        <div className="app-block">
           <Processes />
         </div>
-        <div className='app-block'>
+        <div className="app-block">
           <AboutUs />
         </div>
-        <div className='app-block' style={{ backgroundColor: '#fff !important' }}>
+        <div
+          className="app-block"
+          style={{ backgroundColor: '#fff !important' }}
+        >
           <RoadMap />
         </div>
-        <div className='app-block'>
+        <div className="app-block">
           <Projects />
         </div>
-        <div className='app-block' id='#contact'>
+        <div className="app-block" id="#contact">
           <ContactUs />
         </div>
       </div>
       <Swiper
-        direction={"vertical"}
+        direction={'vertical'}
         slidesPerView={1}
         spaceBetween={30}
         mousewheel={{
@@ -54,25 +80,25 @@ function HomePage() {
         preventClicks={false}
         className="mySwiper"
       >
-        <SwiperSlide className='app-block'>
+        <SwiperSlide className="app-block">
           <Home />
         </SwiperSlide>
-        <SwiperSlide className='app-block app-bg'>
+        <SwiperSlide className="app-block app-bg">
           <KoraxAI />
         </SwiperSlide>
-        <SwiperSlide className='app-block'>
+        <SwiperSlide className="app-block">
           <Processes />
         </SwiperSlide>
-        <SwiperSlide className='app-block'>
+        <SwiperSlide className="app-block">
           <AboutUs />
         </SwiperSlide>
-        <SwiperSlide className='app-block app-bg'>
+        <SwiperSlide className="app-block app-bg">
           <RoadMap />
         </SwiperSlide>
-        <SwiperSlide className='app-block'>
+        <SwiperSlide className="app-block">
           <Projects />
         </SwiperSlide>
-        <SwiperSlide className='app-block'>
+        <SwiperSlide className="app-block">
           <ContactUs />
         </SwiperSlide>
       </Swiper>
@@ -80,4 +106,4 @@ function HomePage() {
   );
 }
 
-export default HomePage
+export default HomePage;

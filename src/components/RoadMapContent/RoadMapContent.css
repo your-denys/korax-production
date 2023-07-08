@@ -90,7 +90,7 @@
   color: #161616;
   width: 550px;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 23px;
   margin-top: auto;
 }
@@ -139,11 +139,9 @@
   }
   .roadmap-text-footer {
     color: #161616;
-    width: 300px;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 23px;
+    width: auto;
     margin-top: auto;
+    font-size: 16px;
   }
 }
 

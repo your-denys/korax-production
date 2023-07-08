@@ -1,12 +1,12 @@
 .platform {
-  height: 100vh;
+  height: calc(100vh - 82px);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 .platform-form {
-  width: 540px;
+  width: 440px;
   padding: 40px;
   background-color: #1d1d1d !important;
   display: flex;

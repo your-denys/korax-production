@@ -47,6 +47,9 @@
 .contact-us-form .input-wrapper:nth-of-type(4) {
   margin-left: auto;
 }
+.contact-us-form label {
+  font-size: 17px;
+}
 
 @media screen and (max-width: 1399px) {
   .contact-us-title {
@@ -74,6 +77,9 @@
   }
   .contact-us-button {
     margin-right: auto;
+  }
+  .contact-us-form label {
+    font-size: 16px;
   }
 }
 @media screen and (max-height: 940px) and (min-width: 800px) {

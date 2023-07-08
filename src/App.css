@@ -108,6 +108,18 @@ select:focus {
   background-color: #fff !important;
 }
 
+.loading {
+  position: fixed;
+  z-index: 9999;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #161616;
+  font-style: 17px;
+}
+
 @media screen and (max-width: 991px) {
   .blocks-description {
     font-size: 45px;
