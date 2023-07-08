@@ -35,7 +35,7 @@ function HomePage() {
 
   return (
     <div className="App">
-      {loading && <h2  className={'loading'}>{loadNumb}%</h2>}
+      {loading && loadNumb < 100 && <h2  className={'loading'}>{loadNumb}%</h2>}
       <div className="app-mobile">
         <div className="app-block">
           <Home />
