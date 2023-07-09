@@ -1,35 +1,28 @@
-import React from 'react';
 import './KoraxAIContent.css';
 import { motion } from 'framer-motion';
 import solid from '../../assets/wawes.mp4';
-import { useState } from 'react';
-
 
 const KoraxAIContent = () => {
-  
-  const [videoLoaded2, setVideoLoaded2] = useState(false);
 
-  const handleVideoLoad = () => {
-    setVideoLoaded2(true);
+  const handleContextMenu = (event) => {
+    event.preventDefault();
   };
 
   return (
     <section className="koraxAI">
       <article className='koraxAI-content solid-bg'>
       <video
-        preload='metadata'
+        preload='auto'
           autoPlay
           muted
           loop
           src={solid}
           type="video/mp4"
           playsInline
-          onLoadedData={handleVideoLoad} 
-          style={{ display:videoLoaded2 ? 'block' : 'none' }}
+          onContextMenu={handleContextMenu}
         />
       </article>
-        {!videoLoaded2 && <p>Loading...</p>}
-      <article className="koraxAI-content" style={{position: videoLoaded2 && 'relative', zIndex:2222, marginTop:'11rem'}}>
+      <article className="koraxAI-content" style={{position: 'relative', zIndex:2222, marginTop:'11rem'}}>
         <h2
           initial={{ y: -100, opacity: 0 }}
           transition={{ delay: 0.1, duration: 0.5 }}

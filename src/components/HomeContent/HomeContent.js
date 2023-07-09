@@ -7,6 +7,9 @@ import { useState } from 'react';
 
 const HomeContent = () => {
   const [videoLoaded, setVideoLoaded] = useState(false);
+  const handleContextMenu = (event) => {
+    event.preventDefault();
+  };
 
   const swiper = useSwiper();
   const handleVideoLoad = () => {
@@ -66,11 +69,13 @@ const HomeContent = () => {
           autoPlay
           muted
           loop
+          preload='auto'
           src={video}
           type="video/mp4"
           playsInline
           onLoadedData={handleVideoLoad}
          style={{ display: videoLoaded ? 'block' : 'none' }}
+         onContextMenu={handleContextMenu}
         />
       </motion.article>
     </section>

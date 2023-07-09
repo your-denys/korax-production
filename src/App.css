@@ -5,8 +5,6 @@
 }
 html {
   scroll-behavior: smooth;
-  /* margin-top: -50px;
-  padding-top: 50px; */
   overflow-x: hidden !important;
 
 }
@@ -80,7 +78,7 @@ select:focus {
 
 .App {
    scroll-behavior: smooth;
-  scrollbar-width: none !important; /* Для Firefox */
+  scrollbar-width: none !important;
   -ms-overflow-style: none !important;
   overflow-x: hidden !important;
  
@@ -108,21 +106,38 @@ select:focus {
   background-color: #fff !important;
 }
 
+.loading-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  z-index: 9998;
+position: fixed;
+background-color: #161616;
+
+}
+
+.loading-wrapper img { 
+    width: 130px;
+    margin-top: 40px;
+}
+
+
 .loading-wrapper a {
   font-size: 0 !important;
+  scrollbar-width: none !important; /* Для Firefox */
+  -ms-overflow-style: none !important;
+  overflow: hidden;
 }
 
 .loading {
-  position: fixed;
-  z-index: 9998;
-  width: 100vw;
-  height: calc(100vh - 82px);
   display: flex;
   justify-content: center;
-  align-items: center;
-  background-color: #161616;
-  font-style: 17px;
+  align-self: center;
+  margin: auto;
+  padding-bottom: 100px;
 }
+
 
 @media screen and (max-width: 991px) {
   .blocks-description {

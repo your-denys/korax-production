@@ -12,7 +12,8 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import { Mousewheel } from 'swiper';
 import { useState, useEffect } from 'react';
-import Header from './components/Header/Header';
+import logo from './assets/Korax.svg';
+import { Container } from 'react-bootstrap';
 
 function HomePage() {
   const [loading, setLoading] = useState(true);
@@ -52,9 +53,11 @@ function HomePage() {
   return (
     <div className="App">
       {loading && loadNumb < 100 && (
-        <div className='loading-wrapper'>
-          <Header/>
-           <h2 className={'loading'}>{loadNumb}%</h2>
+        <div className="loading-wrapper">
+          <Container>
+            <img src={logo} alt="KORAX" />
+          </Container>
+          <h2 className={'loading'}>{loadNumb}%</h2>
         </div>
       )}
       <div className="app-mobile">
