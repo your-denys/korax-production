@@ -12,12 +12,27 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import { Mousewheel } from 'swiper';
 import { useState, useEffect } from 'react';
+import Header from './components/Header/Header';
 
 function HomePage() {
   const [loading, setLoading] = useState(true);
   const [loadNumb, setLoadNumb] = useState(0);
 
   useEffect(() => {
+    const handleTouchMove = (event) => {
+      if (loading) {
+        event.preventDefault();
+      }
+    };
+
+    if (loading) {
+      document.body.addEventListener('touchmove', handleTouchMove, {
+        passive: false,
+      });
+    } else {
+      document.body.removeEventListener('touchmove', handleTouchMove);
+    }
+
     const interval = setInterval(() => {
       setLoadNumb((prevLoadNumb) => prevLoadNumb + 1);
     }, 50);
@@ -30,12 +45,18 @@ function HomePage() {
     return () => {
       clearInterval(interval);
       clearTimeout(timeout);
+      document.body.removeEventListener('touchmove', handleTouchMove);
     };
-  }, []);
+  }, [loading]);
 
   return (
     <div className="App">
-      {loading && loadNumb < 100 && <h2  className={'loading'}>{loadNumb}%</h2>}
+      {loading && loadNumb < 100 && (
+        <div className='loading-wrapper'>
+          <Header/>
+           <h2 className={'loading'}>{loadNumb}%</h2>
+        </div>
+      )}
       <div className="app-mobile">
         <div className="app-block">
           <Home />

@@ -32,7 +32,7 @@ const LogIn = () => {
           whileInView={{ width: '100%' }}
           transition={{ duration: 0.7, delay:0.2 }}
           style={{marginRight: 'auto'}}
-          className="border-dashed mb-5"
+          className="border-dashed mb-4"
         ></motion.div>
         {login && <p className="mb-4 mr-auto">User is not found</p>}
         <div className="input-wrapper">

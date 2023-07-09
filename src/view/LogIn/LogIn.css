@@ -6,7 +6,7 @@
   flex-direction: column;
 }
 .platform-form {
-  width: 440px;
+  width: 370px;
   padding: 40px;
   background-color: #1d1d1d !important;
   display: flex;
@@ -22,7 +22,7 @@
 
 .modal-title {
   color: white;
-  font-size: 4rem !important;
+  font-size: 3.5rem !important;
   font-weight: 600 !important;
   margin-bottom: 20px;
   text-align: center;
@@ -41,7 +41,7 @@
   background-color: transparent;
   border: none;
   font-size: 24px;
-  padding: 15px;
+  padding: 10px;
   border-bottom: 1px solid #ffffff;
   color: #ffffff;
   margin-bottom: 20px;
@@ -87,12 +87,7 @@
     padding: 20px 40px;
   }
   .modal-title {
-    color: white;
-    font-size: 4rem !important;
-    font-weight: 600 !important;
     margin-bottom: 10px;
-    text-align: center;
     padding-bottom:0px;
-    width: 100%;
   }
 }

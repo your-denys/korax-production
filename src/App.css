@@ -108,11 +108,15 @@ select:focus {
   background-color: #fff !important;
 }
 
+.loading-wrapper a {
+  font-size: 0 !important;
+}
+
 .loading {
   position: fixed;
   z-index: 9998;
   width: 100vw;
-  height: 100vh;
+  height: calc(100vh - 82px);
   display: flex;
   justify-content: center;
   align-items: center;
