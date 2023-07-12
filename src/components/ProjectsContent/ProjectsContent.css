@@ -26,7 +26,7 @@
 }
 .projects-card p {
   font-weight: 400;
-  font-size: 36px;
+  font-size: 25px;
   line-height: 45px;
   text-transform: uppercase;
   color: #ffffff;
@@ -75,7 +75,7 @@
     padding: 20px;
   }
   .projects-card p {
-    font-size: 27px;
+    font-size: 25px;
     line-height: 40px;
   }
 }
@@ -116,6 +116,6 @@
     height: 220px;
 }
   .projects-card p {
-    font-size: 27px;
+    font-size: 25px;
 }
 }

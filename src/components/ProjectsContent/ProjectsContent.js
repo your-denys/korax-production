@@ -1,6 +1,9 @@
 import React from 'react';
 import './ProjectsContent.css';
 import { motion } from 'framer-motion';
+import { NavLink } from 'react-router-dom';
+
+<NavLink to="/platform"></NavLink>;
 
 const ProjectsContent = () => {
   return (
@@ -22,51 +25,54 @@ const ProjectsContent = () => {
         className="border-dashed mb-5"
       ></motion.div>
       <article className="projects-wrapper">
+        <NavLink to="/platform" className="projects-card card-1">
+          <motion.div
+            // viewport={{ once: true }}
+            initial={{ scale: 0.6 }}
+            whileInView={{ scale: 1 }}
+            transition={{ duration: 0.6 }}
+          >
+            <p>
+              Korax AI Launches Platform Adaptation, Empowering
+              Analysts' Capabilities
+            </p>
+          </motion.div>
+        </NavLink>
+        <NavLink to="/platform" className="projects-card card-2">
         <motion.div
-          // viewport={{ once: true }}
           initial={{ scale: 0.6 }}
           whileInView={{ scale: 1 }}
           transition={{ duration: 0.6 }}
-          className="projects-card card-1"
         >
           <p>
-            Korax AI Launches Platform Adaptation, Empowering
-            Analysts' Capabilities
+            Seamless Integration of Adaptive Charts into Analytical
+            System
           </p>
         </motion.div>
+        </NavLink >
+         <NavLink to="/platform" className="projects-card card-3">
         <motion.div
-          // viewport={{ once: true }}
           initial={{ scale: 0.6 }}
           whileInView={{ scale: 1 }}
           transition={{ duration: 0.6 }}
-          className="projects-card card-2"
         >
           <p>
-          Seamless Integration of Adaptive Charts into Analytical System
+            Thrilling Alliance Revealed with a Leading FinTech Company
           </p>
         </motion.div>
+        </NavLink>
+        <NavLink to="/platform" className="projects-card card-4" >
         <motion.div
-          //  viewport={{ once: true }}
           initial={{ scale: 0.6 }}
           whileInView={{ scale: 1 }}
           transition={{ duration: 0.6 }}
-          className="projects-card card-3"
         >
           <p>
-          Thrilling Alliance Revealed with a Leading FinTech Company
+            Introducing the Launch of 'Trading for Everyone' on
+            Telegram
           </p>
         </motion.div>
-        <motion.div
-          //  viewport={{ once: true }}
-          initial={{ scale: 0.6 }}
-          whileInView={{ scale: 1 }}
-          transition={{ duration: 0.6 }}
-          className="projects-card card-4"
-        >
-          <p>
-          Introducing the Launch of 'Trading for Everyone' on Telegram
-          </p>
-        </motion.div>
+        </NavLink>
       </article>
     </section>
   );
