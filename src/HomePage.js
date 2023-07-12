@@ -85,7 +85,7 @@ function HomePage() {
         <div className="app-block">
           <Projects />
         </div>
-        <div className="app-block" id="#contact">
+        <div className="app-block" id="contact">
           <ContactUs />
         </div>
       </div>
