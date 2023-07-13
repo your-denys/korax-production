@@ -69,11 +69,11 @@
 
 @media screen and (max-width: 768px) {
   .home-content {
-    margin: 150px 20px 0px;
+    margin: 150px 20px 0px ;
     font-weight: 400;
     font-size: 14px;
     padding-left: 0;
-    padding-bottom: 80px;
+    padding-bottom: 0px;
     flex-direction: column;
     border: none;
   }
@@ -93,7 +93,7 @@
     margin-top: 90px;
     position: relative;
     width: 140%;
-    right: 23%;
+    right: 17%;
     top: 0;
   }
   .wrapper-video {
