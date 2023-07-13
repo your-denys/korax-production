@@ -25,7 +25,11 @@
     overflow-x: hidden;
 
 }
-
+@media screen and (min-width: 1800px) {
+    .home-page .border-dashed {
+        display:none;
+    }
+}
 @media screen and (max-width: 768px) {
 .home-page .border-dashed {
     display:none;
