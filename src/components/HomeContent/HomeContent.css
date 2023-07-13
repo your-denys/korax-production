@@ -8,6 +8,8 @@
 }
 .content-wrapper {
   flex:1;
+  position: relative;
+  z-index: 9999;
 }
 .purpose {
   font-weight: 400;
@@ -49,8 +51,12 @@
 }
 
 .video{
-  width: 100%;
-  margin-left: auto;
+    width: 60%;
+    margin-left: auto;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    
 }
 .wrapper-video {
   display: flex;
@@ -83,6 +89,9 @@
   }
   .video{
     margin-top: 90px;
+    position: relative;
+    width: 140%;
+    right: 23%;
   }
   .wrapper-video {
     padding-left:0;

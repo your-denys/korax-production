@@ -58,8 +58,8 @@ const HomeContent = () => {
         </motion.div>
       </article>
       <motion.article
-        initial={{ scale: 0.2, opacity: 0 }}
-        whileInView={{ scale: 1, opacity: 1 }}
+        initial={{  opacity: 0 }}
+        whileInView={{  opacity: 1 }}
         transition={{ duration: 0.5 }}
         className="wrapper-video"
         >

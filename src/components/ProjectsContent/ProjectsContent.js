@@ -18,61 +18,63 @@ const ProjectsContent = () => {
         Projects News
       </motion.h2>
       <motion.div
-        // viewport={{once: true }}
         initial={{ width: 0 }}
         whileInView={{ width: '100%' }}
         transition={{ duration: 1 }}
         className="border-dashed mb-5"
       ></motion.div>
       <article className="projects-wrapper">
-        <NavLink to="/platform" className="projects-card card-1">
           <motion.div
-            // viewport={{ once: true }}
             initial={{ scale: 0.6 }}
             whileInView={{ scale: 1 }}
             transition={{ duration: 0.6 }}
+            className="projects-card card-1"
           >
+        <NavLink to="/platform" >
             <p>
               Korax AI Launches Platform Adaptation, Empowering
               Analysts' Capabilities
             </p>
-          </motion.div>
         </NavLink>
-        <NavLink to="/platform" className="projects-card card-2">
+          </motion.div>
         <motion.div
           initial={{ scale: 0.6 }}
           whileInView={{ scale: 1 }}
           transition={{ duration: 0.6 }}
+          className="projects-card card-2"
         >
+        <NavLink to="/platform">
           <p>
             Seamless Integration of Adaptive Charts into Analytical
             System
           </p>
-        </motion.div>
         </NavLink >
-         <NavLink to="/platform" className="projects-card card-3">
+        </motion.div>
         <motion.div
           initial={{ scale: 0.6 }}
           whileInView={{ scale: 1 }}
           transition={{ duration: 0.6 }}
+          className="projects-card card-3"
         >
+         <NavLink to="/platform">
           <p>
             Thrilling Alliance Revealed with a Leading FinTech Company
           </p>
-        </motion.div>
         </NavLink>
-        <NavLink to="/platform" className="projects-card card-4" >
+        </motion.div>
         <motion.div
           initial={{ scale: 0.6 }}
           whileInView={{ scale: 1 }}
           transition={{ duration: 0.6 }}
+          className="projects-card card-4"
         >
+        <NavLink to="/platform" >
           <p>
             Introducing the Launch of 'Trading for Everyone' on
             Telegram
           </p>
-        </motion.div>
         </NavLink>
+        </motion.div>
       </article>
     </section>
   );
