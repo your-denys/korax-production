@@ -51,11 +51,11 @@
 }
 
 .video{
-    width: 60%;
+    width: 56%;
     margin-left: auto;
     position: absolute;
     top: 8%;
-    right: 20px;
+    right:-4%;
     border: none;
     
 }
