@@ -1,7 +1,7 @@
 .home-content {
   margin-top: 200px;
   display: flex;
-  padding-bottom: 150px;
+  padding-bottom: 160px;
   padding-left: 120px;
   justify-content: space-between;
   align-items: center;
@@ -107,7 +107,7 @@
 @media screen and (max-height:940px) and (min-height:800px) and (min-width:800px) {
   .home-content {
     margin-top: 80px;
-    padding-bottom: 50px;
+    padding-bottom:160px;
   }
   .home-content .contact-us {
     margin-top: 40px;
@@ -119,7 +119,7 @@
 @media screen and (max-height:800px) and (min-height:700px) and (min-width:800px) {
   .home-content {
     margin-top: 80px;
-    padding-bottom: 120px !important;
+    padding-bottom: 170px !important;
   }
   .title-home {
     font-size: 31px;

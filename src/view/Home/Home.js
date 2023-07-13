@@ -20,13 +20,13 @@ const Home = () => {
       <Container>
         <HomeContent />
         <Navigation/>
-      </Container>
         <motion.div
         initial={{ width: 0 }}
         whileInView={{ width: '100%' }}
         transition={{ duration: 0.7 }}
         className="border-dashed"
       ></motion.div>
+      </Container>
     </motion.div>
   );
 };
