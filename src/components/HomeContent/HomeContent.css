@@ -54,8 +54,9 @@
     width: 60%;
     margin-left: auto;
     position: absolute;
-    top: 0;
+    top: 8%;
     right: 20px;
+    border: none;
     
 }
 .wrapper-video {
@@ -92,6 +93,7 @@
     position: relative;
     width: 140%;
     right: 23%;
+    top: 0;
   }
   .wrapper-video {
     padding-left:0;
@@ -117,7 +119,7 @@
 @media screen and (max-height:800px) and (min-height:700px) and (min-width:800px) {
   .home-content {
     margin-top: 80px;
-    padding-bottom: 50px;
+    padding-bottom: 120px !important;
   }
   .title-home {
     font-size: 31px;
