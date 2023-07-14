@@ -1,6 +1,6 @@
 import Nav from 'react-bootstrap/Nav';
 import './HomeContent.css';
-import video from '../../assets/video.mp4';
+import video from '../../assets/video.webm';
 import { motion } from 'framer-motion';
 import { useSwiper } from 'swiper/react';
 import { useState } from 'react';
