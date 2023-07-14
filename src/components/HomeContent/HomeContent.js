@@ -64,18 +64,18 @@ const HomeContent = () => {
         transition={{ duration: 0.5 }}
         className="wrapper-video"
         >
-           {!videoLoaded && <img src={videoPoster} className='video' alt="Robot" />}
+           {/* {!videoLoaded && <img src={videoPoster} className='video' alt="Robot" />} */}
         <video
           className="video"
           autoPlay
           muted
           loop
-          preload='auto'
+          // preload='auto'
           src={video}
           type="video/mp4"
           playsInline
-          onLoadedData={handleVideoLoad}
-         style={{ display: videoLoaded ? 'block' : 'none' }}
+          // onLoadedData={handleVideoLoad}
+        //  style={{ display: videoLoaded ? 'block' : 'none' }}
          onContextMenu={handleContextMenu}
         />
       </motion.article>
