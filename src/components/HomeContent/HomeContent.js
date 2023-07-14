@@ -3,19 +3,19 @@ import './HomeContent.css';
 import video from '../../assets/video.webm';
 import { motion } from 'framer-motion';
 import { useSwiper } from 'swiper/react';
-import { useState } from 'react';
-import videoPoster from '../../assets/video-poster.webp';
+// import { useState } from 'react';
+// import videoPoster from '../../assets/video-poster.webp';
 
 const HomeContent = () => {
-  const [videoLoaded, setVideoLoaded] = useState(false);
+  // const [videoLoaded, setVideoLoaded] = useState(false);
   const handleContextMenu = (event) => {
     event.preventDefault();
   };
 
   const swiper = useSwiper();
-  const handleVideoLoad = () => {
-    setVideoLoaded(true);
-  };
+  // const handleVideoLoad = () => {
+  //   setVideoLoaded(true);
+  // };
   return (
     <section className="home-content">
       <article className="content-wrapper">
