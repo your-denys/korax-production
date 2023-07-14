@@ -30,6 +30,12 @@
   padding-top: 10px;
 }
 
+@media screen and (min-width: 1648px) {
+  .about-us-content p {
+  font-size: 26px !important;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .about-us .blocks-description {
     font-weight: 600;

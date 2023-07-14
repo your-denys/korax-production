@@ -49,6 +49,13 @@
   background-image: url('../../assets/project-bg-4.jpg');
 }
 
+@media screen and (min-width: 1648px) {
+  .projects-card p {
+    font-size: 30px;
+    line-height: 45px;
+  }
+}
+
 @media screen and (max-width: 1399px) {
   .projects-wrapper {
     display: flex;

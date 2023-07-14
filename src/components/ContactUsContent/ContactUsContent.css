@@ -51,6 +51,15 @@
   font-size: 17px;
 }
 
+@media screen and (min-width: 1648px) {
+  .contact-us-form label {
+    font-size: 26px;
+  }
+  .contact-us-button span {
+   font-size: 26px;
+  }
+}
+
 @media screen and (max-width: 1399px) {
   .contact-us-title {
     font-size: 135px;

@@ -63,6 +63,23 @@
  opacity: 0.6;
 
 }
+
+@media  screen and (min-width: 1648px){
+  .modal-title {
+    font-size: 5rem !important;
+  }
+
+  .platform-form button {
+    font-size: 26px;
+  }
+
+  label {
+    font-size: 26px;
+  }
+  .platform-form {
+    width: 450px;
+  }
+}
 @media screen and (max-width: 567px) {
   .platform-form {
     width: 375px;

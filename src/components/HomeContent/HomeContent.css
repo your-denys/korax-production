@@ -66,6 +66,21 @@
  margin-right: -30px;
 }
 
+@media screen and (min-width: 1648px) {
+  .purpose {
+    font-size: 30px !important;
+  }
+  .title-home {
+    font-size: 48px;
+  }
+  .text-home {
+    font-size: 26px;
+    line-height: 30px;
+  }
+  .home-content .contact-us span {
+    font-size: 22px;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .home-content {

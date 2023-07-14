@@ -1,9 +1,12 @@
+.processes {
+  display: flex;
+  flex-direction: column;
+}
 .processes-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-
   border-bottom: 1px solid #b8b8b8;
   position: relative;
 }
@@ -70,6 +73,16 @@
 .processes .blocks-description-border {
   font-size: 36px;
   line-height: 40px;
+}
+
+@media screen and (min-width: 1648px) {
+  .title-button p {
+    font-size: 24px;
+  }
+  .processes-description p {
+    font-size: 26px;
+    line-height: 30px;
+  }
 }
 
 @media screen and (max-width: 1399px) {

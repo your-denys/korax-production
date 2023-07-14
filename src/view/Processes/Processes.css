@@ -6,6 +6,10 @@
         overflow-x: hidden;
 
     }
+    .processes-page .container {
+        height: 100%;
+        display: flex;
+    }
 } 
 @media screen and (max-width: 768px) {
     .processes-page {
@@ -17,3 +21,4 @@
 
     }
 } 
+

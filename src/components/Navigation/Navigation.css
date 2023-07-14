@@ -22,6 +22,11 @@
     color: #b8b8b8;
     padding-left: 4px;
 }
+@media screen and (min-width: 1648px) {
+  .navigation .nav-link {
+    font-size: 21px;
+  }
+}
 @media screen and (max-width: 768px) {
     .me-auto {
         display: none !important;

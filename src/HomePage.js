@@ -11,55 +11,55 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import { Mousewheel } from 'swiper';
-import { useState, useEffect } from 'react';
-import logo from './assets/Korax.svg';
-import { Container } from 'react-bootstrap';
+// import { useState, useEffect } from 'react';
+// import logo from './assets/Korax.svg';
+// import { Container } from 'react-bootstrap';
 
 function HomePage() {
-  const [loading, setLoading] = useState(true);
-  const [loadNumb, setLoadNumb] = useState(0);
+  // const [loading, setLoading] = useState(true);
+  // const [loadNumb, setLoadNumb] = useState(0);
 
-  useEffect(() => {
-    const handleTouchMove = (event) => {
-      if (loading) {
-        event.preventDefault();
-      }
-    };
+  // useEffect(() => {
+  //   const handleTouchMove = (event) => {
+  //     if (loading) {
+  //       event.preventDefault();
+  //     }
+  //   };
 
-    if (loading) {
-      document.body.addEventListener('touchmove', handleTouchMove, {
-        passive: false,
-      });
-    } else {
-      document.body.removeEventListener('touchmove', handleTouchMove);
-    }
+  //   if (loading) {
+  //     document.body.addEventListener('touchmove', handleTouchMove, {
+  //       passive: false,
+  //     });
+  //   } else {
+  //     document.body.removeEventListener('touchmove', handleTouchMove);
+  //   }
 
-    const interval = setInterval(() => {
-      setLoadNumb((prevLoadNumb) => prevLoadNumb + 1);
-    }, 50);
+  //   const interval = setInterval(() => {
+  //     setLoadNumb((prevLoadNumb) => prevLoadNumb + 1);
+  //   }, 50);
 
-    const timeout = setTimeout(() => {
-      clearInterval(interval);
-      setLoading(false);
-    }, 5000);
+  //   const timeout = setTimeout(() => {
+  //     clearInterval(interval);
+  //     setLoading(false);
+  //   }, 5000);
 
-    return () => {
-      clearInterval(interval);
-      clearTimeout(timeout);
-      document.body.removeEventListener('touchmove', handleTouchMove);
-    };
-  }, [loading]);
+  //   return () => {
+  //     clearInterval(interval);
+  //     clearTimeout(timeout);
+  //     document.body.removeEventListener('touchmove', handleTouchMove);
+  //   };
+  // }, [loading]);
 
   return (
     <div className="App">
-      {loading && loadNumb < 100 && (
+      {/* {loading && loadNumb < 100 && (
         <div className="loading-wrapper">
           <Container>
             <img src={logo} alt="KORAX" />
           </Container>
           <h2 className={'loading'}>{loadNumb}%</h2>
         </div>
-      )}
+      )} */}
       <div className="app-mobile">
         <div className="app-block">
           <Home />

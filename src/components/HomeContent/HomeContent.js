@@ -4,6 +4,7 @@ import video from '../../assets/video.mp4';
 import { motion } from 'framer-motion';
 import { useSwiper } from 'swiper/react';
 import { useState } from 'react';
+import videoPoster from '../../assets/video-poster.webp';
 
 const HomeContent = () => {
   const [videoLoaded, setVideoLoaded] = useState(false);
@@ -63,7 +64,7 @@ const HomeContent = () => {
         transition={{ duration: 0.5 }}
         className="wrapper-video"
         >
-        {!videoLoaded && <p> Loading...</p>}
+           {!videoLoaded && <img src={videoPoster} className='video' alt="Robot" />}
         <video
           className="video"
           autoPlay

@@ -35,6 +35,21 @@
 
 }
 
+    @media screen and (min-width: 1648px) {
+        .koraxAI-title {
+            font-size: 48px;
+        }
+        .koraxAI-subtitle {
+            font-size: 30px;
+            margin-bottom: 2rem;
+            line-height:45px;
+        }
+        .koraxAI-text {
+            font-size: 26px;
+            line-height: 35px;
+        }
+    }
+
 @media screen and (max-width: 768px) {
     .koraxAI {
         justify-content: center;

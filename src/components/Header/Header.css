@@ -18,3 +18,12 @@
 .nav-wrapper img { 
     width: 130px;
 }
+
+@media screen and (min-width: 1648px) {
+    .nav-wrapper img { 
+        width: 160px;
+    } 
+    .button-log-in {
+        font-size: 28px;
+    }
+}

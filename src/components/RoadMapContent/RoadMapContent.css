@@ -82,8 +82,7 @@
   20% {
     opacity: 0;
   }
-  100% {
-  }
+
 }
 
 .roadmap-text-footer {
@@ -94,6 +93,24 @@
   line-height: 23px;
   margin-top: auto;
 }
+
+@media screen and (min-width: 1648px) {
+  .card-item span {
+    font-size: 66px;
+  }
+  .card-item h2 {
+    font-size: 30px;
+  }
+  .card-item p {
+    font-size: 20px;
+    line-height: normal;
+  }
+  .roadmap-text-footer {
+    font-size: 26px;
+    line-height: normal;
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .card-item {
    padding: 30px 20px;
