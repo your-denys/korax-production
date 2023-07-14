@@ -21,7 +21,7 @@ const KoraxAIContent = () => {
   return (
     <section className="koraxAI">
       <article className='koraxAI-content solid-bg'>
-      {!videoLoaded1 && <img src={poster} className='video' alt="Robot" />}
+      {!videoLoaded1 && <img src={poster} alt="Robot" />}
       <video
         preload='auto'
           autoPlay
