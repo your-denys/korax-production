@@ -151,7 +151,7 @@ background-color: #161616;
     font-size: 45px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 820px) {
   .blocks-description {
     font-size: 24px;
   }

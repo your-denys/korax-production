@@ -50,7 +50,7 @@
         }
     }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 820px) {
     .koraxAI {
         justify-content: center;
         gap: 20px;
@@ -65,10 +65,11 @@
         margin-bottom: 190px;
     }
     .koraxAI-content video {
-        width: 100%;
+        width: 50%;
         height: auto;
         top: -25px;
         bottom: 0;
+        left:23%;
     }
     .koraxAI-title {
         font-size: 36px;
@@ -80,4 +81,14 @@
         font-size: 16px;
     }
  
+}
+
+@media screen and (max-width: 500px) {
+    .koraxAI-content video {
+        width: 100%;
+        height: auto;
+        top: -25px;
+        bottom: 0;
+        left: 0;
+    }
 }

@@ -1,21 +1,22 @@
 import Nav from 'react-bootstrap/Nav';
 import './HomeContent.css';
 import video from '../../assets/video.webm';
+import videoMob from '../../assets/phone-video.mp4';
 import { motion } from 'framer-motion';
 import { useSwiper } from 'swiper/react';
-// import { useState } from 'react';
-// import videoPoster from '../../assets/video-poster.webp';
+import { useState } from 'react';
+import videoPoster from '../../assets/video-poster.webp';
 
 const HomeContent = () => {
-  // const [videoLoaded, setVideoLoaded] = useState(false);
+  const [videoLoaded, setVideoLoaded] = useState(false);
   const handleContextMenu = (event) => {
     event.preventDefault();
   };
 
   const swiper = useSwiper();
-  // const handleVideoLoad = () => {
-  //   setVideoLoaded(true);
-  // };
+  const handleVideoLoad = () => {
+    setVideoLoaded(true);
+  };
   return (
     <section className="home-content">
       <article className="content-wrapper">
@@ -64,9 +65,9 @@ const HomeContent = () => {
         transition={{ duration: 0.5 }}
         className="wrapper-video"
         >
-           {/* {!videoLoaded && <img src={videoPoster} className='video' alt="Robot" />} */}
+           {!videoLoaded && <img src={videoPoster} className='video' alt="Robot" />}
         <video
-          className="video"
+          className="video pc"
           autoPlay
           muted
           loop
@@ -74,8 +75,21 @@ const HomeContent = () => {
           src={video}
           type="video/mp4"
           playsInline
-          // onLoadedData={handleVideoLoad}
-        //  style={{ display: videoLoaded ? 'block' : 'none' }}
+          onLoadedData={handleVideoLoad}
+         style={{ display: videoLoaded ? 'block' : 'none' }}
+         onContextMenu={handleContextMenu}
+        />
+        <video
+          className="video mobile"
+          autoPlay
+          muted
+          loop
+          // preload='auto'
+          src={videoMob}
+          type="video/mp4"
+          playsInline
+          onLoadedData={handleVideoLoad}
+         style={{ display: videoLoaded ? 'block' : 'none' }}
          onContextMenu={handleContextMenu}
         />
       </motion.article>

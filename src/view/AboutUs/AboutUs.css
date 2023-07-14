@@ -1,5 +1,6 @@
 .aboutUs-page .container {
     height: 100%;
+
 }
 @media screen and (min-width: 1200px) {
     .aboutUs-page{
@@ -15,6 +16,5 @@
         position: relative;
         overflow-y: hidden;
         overflow-x: hidden;
-
     }
 } 
