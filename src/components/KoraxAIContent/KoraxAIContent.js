@@ -20,6 +20,7 @@ const KoraxAIContent = () => {
       <article className="koraxAI-content solid-bg">
         {/* {!videoLoaded1 && <img src={poster} alt="Robot" />} */}
         <video
+          preload="auto"
           autoPlay
           muted
           loop
@@ -36,9 +37,7 @@ const KoraxAIContent = () => {
         style={{
           position: 'relative',
           zIndex: 2222,
-          paddingTop: '11rem',
-          backgroundColor: '#fff',
-          width: '50%',
+          marginTop: '11rem',
         }}
       >
         <h2
