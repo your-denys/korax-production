@@ -2,7 +2,7 @@ import Nav from 'react-bootstrap/Nav';
 import './HomeContent.css';
 import video from '../../assets/video.webm';
 // import videoMob from '../../assets/phone-video.mp4';
-import videoMob from '../../assets/../../assets/robot-screen.mp4';
+import videoMob from '../../assets/robot-screen.mp4';
 import { motion } from 'framer-motion';
 import { useSwiper } from 'swiper/react';
 import { useState } from 'react';
