@@ -14,6 +14,14 @@ const Form = () => {
   const [buttonText, setButtonText] = useState('Send message');
   const [status, setStatus] = useState({});
 
+  const timeSubmit = (e) => {
+  e.preventDefault();
+  setStatus({
+    success: true,
+    message: 'We will contact you soon!',
+  });
+  setButtonText('Sent!')
+}
   const onFormUpdate = (category, value) => {
     setFormDetails({
       ...formDetails,
@@ -22,33 +30,33 @@ const Form = () => {
     console.log(formDetails);
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setButtonText('Sending...');
-    let response = await fetch('http://localhost:5000/contact', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json;charset=utf-8',
-      },
-      body: JSON.stringify(formDetails),
-    });
-    setButtonText('Send message');
-    let result = await response.json();
-    setFormDetails(formInitial);
-    if (result.code === 200) {
-      setStatus({
-        success: true,
-        message: 'We will contact you soon!',
-      });
-    } else {
-      setStatus({
-        success: false,
-        message: 'Something went wrong, please try again later',
-      });
-    }
-  };
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   setButtonText('Sending...');
+  //   let response = await fetch('http://localhost:5000/contact', {
+  //     method: 'POST',
+  //     headers: {
+  //       'Content-Type': 'application/json;charset=utf-8',
+  //     },
+  //     body: JSON.stringify(formDetails),
+  //   });
+  //   setButtonText('Send message');
+  //   let result = await response.json();
+  //   setFormDetails(formInitial);
+  //   if (result.code === 200) {
+  //     setStatus({
+  //       success: true,
+  //       message: 'We will contact you soon!',
+  //     });
+  //   } else {
+  //     setStatus({
+  //       success: false,
+  //       message: 'Something went wrong, please try again later',
+  //     });
+  //   }
+  // };
   return (
-   <motion.form initial={{y:200, opacity:0}} whileInView={{y:0, opacity:1}} transition={{delay:0.2, duration:0.4}} className="contact-us-form" onSubmit={handleSubmit}>
+   <motion.form initial={{y:200, opacity:0}} whileInView={{y:0, opacity:1}} transition={{delay:0.2, duration:0.4}} className="contact-us-form" onSubmit={timeSubmit}>
       <div className="input-wrapper">
         <label>
           {' '}

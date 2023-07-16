@@ -1,7 +1,7 @@
 import React from 'react';
 import './ProjectsContent.css';
 import { motion } from 'framer-motion';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 <NavLink to="/platform"></NavLink>;
 
@@ -68,12 +68,12 @@ const ProjectsContent = () => {
           transition={{ duration: 0.6 }}
           className="projects-card card-4"
         >
-        <NavLink to="/platform" >
+        <Link to="https://t.me/Crypto_AI_Analytics" >
           <p>
             Introducing the Launch of 'Trading for Everyone' on
             Telegram
           </p>
-        </NavLink>
+        </Link>
         </motion.div>
       </article>
     </section>

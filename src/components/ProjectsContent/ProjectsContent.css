@@ -32,6 +32,11 @@
   color: #ffffff;
 }
 
+.projects-card a {
+  height: 100%;
+  display: inline-block;
+}
+
 .card-1 {
   width: 40%;
   background-image: url('../../assets/project-bg-1.jpg');
