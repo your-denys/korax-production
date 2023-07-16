@@ -4,18 +4,21 @@
     height: 100vh;
 }
 .koraxAI-content {
-    width: 50%;
+    /* width: 50%; */
     overflow: hidden;
 }
 .koraxAI video {
     position: absolute;
-    width: 49%;
-    bottom: 0;
+    width: 51%;
+    bottom: -1px;
     left: 0;
     object-fit: cover;
     height: 100vh;
+    z-index: 0;
+    outline: none;
+
 }
-.koraxAI-content > * {
+.koraxAI-content > *:not(video) {
     color: #161616;
 }
 .koraxAI-title {
@@ -32,7 +35,6 @@
 .koraxAI-text {
     font-size: 17px;
     line-height: 24px;
-
 }
 
     @media screen and (min-width: 1648px) {
@@ -59,16 +61,20 @@
         height: 100%;
     }
     .koraxAI-content {
-        width: 100%;
+        width: 100% !important;
+        background-color: transparent !important;
+
     }
     .solid-bg {
         margin-bottom: 190px;
     }
     .koraxAI-content video {
         width: 50%;
+        border: none !important;
         height: auto;
         top: -25px;
         bottom: 0;
+        outline: none;
         left:23%;
     }
     .koraxAI-title {

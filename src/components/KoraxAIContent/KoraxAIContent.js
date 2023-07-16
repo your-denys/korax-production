@@ -4,11 +4,8 @@ import solid from '../../assets/wawes.mp4';
 // import { useState } from 'react';
 // import poster from '../../assets/wawes-poster.jpg'
 
-
 const KoraxAIContent = () => {
-
   // const [videoLoaded1, setVideoLoaded1] = useState(false);
-
 
   const handleContextMenu = (event) => {
     event.preventDefault();
@@ -20,10 +17,9 @@ const KoraxAIContent = () => {
 
   return (
     <section className="koraxAI">
-      <article className='koraxAI-content solid-bg'>
-      {/* {!videoLoaded1 && <img src={poster} alt="Robot" />} */}
-      <video
-        preload='auto'
+      <article className="koraxAI-content solid-bg">
+        {/* {!videoLoaded1 && <img src={poster} alt="Robot" />} */}
+        <video
           autoPlay
           muted
           loop
@@ -35,7 +31,16 @@ const KoraxAIContent = () => {
           // style={{ display: videoLoaded1 ? 'block' : 'none' }}
         />
       </article>
-      <article className="koraxAI-content" style={{position: 'relative', zIndex:2222, marginTop:'11rem'}}>
+      <article
+        className="koraxAI-content"
+        style={{
+          position: 'relative',
+          zIndex: 2222,
+          paddingTop: '11rem',
+          backgroundColor: '#fff',
+          width: '50%',
+        }}
+      >
         <h2
           initial={{ y: -100, opacity: 0 }}
           transition={{ delay: 0.1, duration: 0.5 }}
@@ -62,16 +67,17 @@ const KoraxAIContent = () => {
           Korax AI leverages the most cutting-edge scientific methods,
           including quantitative finance, machine learning, and
           behavioral finance, to develop a tailored fintech investment
-          solution. Korax AI rapidly digests enormous volumes
-          of data and makes intelligent, real-time trading decisions,
-          allowing its client to take advantage over traditional
-          human-based technique. <br/> <br/>Banks, asset managers, and brokers can
-          use Korax AI to enhance their trading processes and provide
-          clients with innovative investment options. Korax AI's
-          collection of diverse algorithms covers many financial
-          derivatives, including FOREX, Indices, Stocks, and Crypto,
-          making it a flexible and adaptable solution for a variety of
-          financial players.
+          solution. Korax AI rapidly digests enormous volumes of data
+          and makes intelligent, real-time trading decisions, allowing
+          its client to take advantage over traditional human-based
+          technique. <br /> <br />
+          Banks, asset managers, and brokers can use Korax AI to
+          enhance their trading processes and provide clients with
+          innovative investment options. Korax AI's collection of
+          diverse algorithms covers many financial derivatives,
+          including FOREX, Indices, Stocks, and Crypto, making it a
+          flexible and adaptable solution for a variety of financial
+          players.
         </motion.p>
       </article>
     </section>
