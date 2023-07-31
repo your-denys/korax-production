@@ -14,7 +14,7 @@
   line-height: normal;
 }
 .premium-wrapper {
-  margin-top: 40px;
+  margin-top: 100px;
   margin-bottom: 50px;
   display: flex;
   align-items: center;
@@ -23,8 +23,39 @@
 }
 .premium-text {
   width: 40%;
-  font-size: 17px;
+  font-size: 20px;
+  line-height: 133%;
 }
-.premium-content .border-dashed {
-  z-index: 2;
+@media screen and (max-width: 820px) {
+  .premium-subtitle {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  .premium-content img {
+    width: 360px;
+    margin-bottom: 15px;
+  }
+  .premium-description {
+    font-size: 17px;
+    text-align: center;
+  }
+  .premium-wrapper {
+    margin-top: 70px;
+    margin-bottom: 50px;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+  }
+  .premium-text {
+    width: 100%;
+    font-size: 20px;
+    line-height: 133%;
+    font-size: 17px;
+  }
+
+  .premium-video {
+    width: 100%;
+    height: auto;
+  }
 }

@@ -31,9 +31,15 @@ const SubscriptionContent = () => {
       <h2 className="subscription-title">
         Lorem ipsum dolor sit amet consectetur
       </h2>
+      {/* <motion.div
+        initial={{ width: 0 }}
+        whileInView={{ width: '100%' }}
+        transition={{ duration: 1 }}
+        className="border-dashed mb-5"
+      ></motion.div> */}
       {isMobile ? (
         <Swiper
-          slidesPerView={2}
+          slidesPerView={1.5}
           spaceBetween={15}
           centeredSlides={true}
           pagination={{

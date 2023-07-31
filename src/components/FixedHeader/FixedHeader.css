@@ -1,15 +1,16 @@
 .fixed-wrapper {
     position: fixed;
+    z-index: 99991;
     top: 0;
     left: 0;
     width: 100%;
     background-color: #161616;
-    padding: 25px 40px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 13px 0;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 32%)
 }
 
 .fixed-header {
-    max-width: 1200px;
+    max-width: 1240px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -35,4 +36,20 @@
     cursor: pointer;
     color: #161616;
 
+}
+
+@media screen and (max-width: 820px) {
+    .fixed-img { 
+        width: 69px;
+    }
+    .fixed-text {
+        font-family: 'Consolas';
+        font-size: 13px;
+        width: 150px;
+        text-align: center;
+    }
+    .fixed-button {
+        font-size: 14px;
+        padding: 10px;
+    }
 }

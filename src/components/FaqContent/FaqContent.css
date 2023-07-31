@@ -1,0 +1,38 @@
+.faq .accordion {
+  margin-top: 60px;
+  --bs-accordion-border-color: none;
+  width: 90%;
+  display: block;
+  margin: 60px auto 0;
+}
+.faq .accordion-button:not(.collapsed) {
+  color: #161616;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 600;
+  background-color: #ffffff;
+}
+.faq .accordion-button:not(.collapsed)::after {
+  background-image: var(--bs-accordion-btn-icon) !important;
+}
+.faq .accordion-button {
+  color: #161616;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  background-color: #ffffff;
+}
+.faq .accordion-item {
+    margin-bottom: 15px;
+}
+.faq .accordion-button:focus {
+    box-shadow: none;
+}
+.faq .accordion-item {
+    border-radius: 0px;
+    border: 1px solid #16161625;
+}
+.faq .accordion-body {
+    color: #161616;
+    font-size: 17px;
+}

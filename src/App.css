@@ -139,7 +139,12 @@ background-color: #161616;
   margin: auto;
   padding-bottom: 100px;
 }
-
+.modal-backdrop {
+  z-index: 99991;
+}
+.modal {
+  z-index: 999999;
+}
 @media screen and (min-width: 1648px) {
   .blocks-title {
     font-size: 30px;

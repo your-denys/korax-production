@@ -6,12 +6,18 @@ import Spinner from 'react-bootstrap/Spinner';
 
 const TransactionWindow = ({ show, onHide, type }) => {
   const [load, setLoad] = useState(true);
+  const [clicked, setClicked] = useState(false);
   const inputRef = useRef(null);
 
   const handleCopy = () => {
     if (inputRef.current) {
       inputRef.current.select();
       navigator.clipboard.writeText(inputRef.current.value);
+      setClicked(true)
+      setTimeout(() => {
+        setClicked(false)
+       
+      }, 3000);
     }
   };
 
@@ -45,17 +51,20 @@ const TransactionWindow = ({ show, onHide, type }) => {
             <img className="transaction-img" src={qr} alt="QR Code" />
           )}
           <p className="transaction-deposit">Deposit Address</p>
-          <div className='copy-input'>
+          <div className="copy-input">
             <input
               style={{ color: load && 'transparent' }}
               className="transaction-address"
               ref={inputRef}
               type="text"
               value="TCcd8M3TZBgJ9C4cP6aWAAfazfJzoSHumv"
+              readOnly
             />
-            <button style={{ color: 'black' }} onClick={handleCopy}>
-              
-            </button>
+            <button
+              style={{ color: 'black' }}
+              onClick={handleCopy}
+              className={clicked ? "clicked" : ''}
+            ></button>
           </div>
 
           <TransactionForm type={type} />

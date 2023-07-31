@@ -1,0 +1,57 @@
+.premium-contact-title {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120.6%;
+  letter-spacing: 2.64px;
+  margin-bottom: 30px;
+}
+.premium-contact-wrapper {
+  padding: 27px 46px;
+  border-radius: 35px;
+  border: 2px solid #e2e2e2;
+  display: flex;
+  align-items: center;
+  gap: 27px;
+}
+.premium-contact-send {
+  font-size: 24px;
+}
+.premium-contact-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.premium-contact-link {
+  font-size: 27px;
+  font-weight: 600;
+}
+.premium-contact-link:hover {
+  color: #fff;
+}
+.premium-contact-question {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 820px) {
+  .premium-contact-title {
+    font-size: 36px;
+  }
+  .premium-contact-wrapper {
+    padding: 30px 15px;
+    border-radius: 35px;
+    border: 2px solid #e2e2e2;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .premium-contact-send {
+    font-size: 18px;
+  }
+  .premium-contact-link {
+    font-size: 22px;
+  }
+  .premium-contact-question {
+    font-size: 16px;
+  }
+}

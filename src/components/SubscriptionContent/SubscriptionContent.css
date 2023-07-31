@@ -7,10 +7,16 @@
 .subscription .swiper-slide:not(.swiper-slide-active) {
   transform: scale(0.96);
 }
+.subscription {
+  margin: 40px 0;
+}
+/* .subscription .swiper-slide {
+ min-width: 250px;
+} */
 .subscription-title {
   text-align: center;
   color: #161616;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   font-size: 48px;
   font-style: normal;
   font-weight: 600;
@@ -20,6 +26,7 @@
   border: 2px solid #b8b8b8;
   border-radius: 19px;
   padding: 30px 25px;
+  margin-bottom: 30px;
 }
 .subscription-card p {
   font-family: 'Consolas';
@@ -119,6 +126,10 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-image: url('../../assets/list.svg');
+}
+.subscription .border-dashed {
+  z-index: 2;
+
 }
 @media screen and (min-width: 820px) {
   .subscription-wrapper {

@@ -1,0 +1,17 @@
+.premium-contact-page {
+    padding: 50px 0 0;
+}
+.premium-contact-page .footer {
+    background-color: #161616;
+    margin-top: 50px;
+}
+.premium-contact-page .footer p {
+    color: #fff;
+}
+.premium-contact-page .footer svg path {
+    fill: #fff;
+}
+.premium-contact-page .footer-wrapper {
+    padding-left:0 ;
+    padding-right:0 ;
+}
