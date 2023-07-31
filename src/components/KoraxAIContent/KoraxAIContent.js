@@ -1,27 +1,27 @@
 import './KoraxAIContent.css';
 import { motion } from 'framer-motion';
 import solid from '../../assets/wawes.mp4';
-// import { useState } from 'react';
-// import poster from '../../assets/wawes-poster.jpg'
+import { useState } from 'react';
+import poster from '../../assets/wawes-poster.jpg'
 
 
 const KoraxAIContent = () => {
 
-  // const [videoLoaded1, setVideoLoaded1] = useState(false);
+  const [videoLoaded1, setVideoLoaded1] = useState(false);
 
 
   const handleContextMenu = (event) => {
     event.preventDefault();
   };
 
-  // const handleVideoLoad1 = () => {
-  //   setVideoLoaded1(true);
-  // };
+  const handleVideoLoad1 = () => {
+    setVideoLoaded1(true);
+  };
 
   return (
     <section className="koraxAI">
       <article className='koraxAI-content solid-bg'>
-      {/* {!videoLoaded1 && <img src={poster} alt="Robot" />} */}
+      {!videoLoaded1 && <img src={poster} alt="Robot" />}
       <video
           autoPlay
           muted
@@ -30,8 +30,8 @@ const KoraxAIContent = () => {
           type="video/mp4"
           playsInline
           onContextMenu={handleContextMenu}
-          // onLoadedData={handleVideoLoad1}
-          // style={{ display: videoLoaded1 ? 'block' : 'none' }}
+          onLoadedData={handleVideoLoad1}
+          style={{ display: videoLoaded1 ? 'block' : 'none' }}
         />
       </article>
       <article className="koraxAI-content" style={{position: 'relative', zIndex:2222, marginTop:'11rem'}}>

@@ -14,49 +14,47 @@ const Form = () => {
   const [buttonText, setButtonText] = useState('Send message');
   const [status, setStatus] = useState({});
 
-  const timeSubmit = (e) => {
-  e.preventDefault();
-  setStatus({
-    success: true,
-    message: 'We will contact you soon!',
-  });
-  setButtonText('Sent!')
-}
   const onFormUpdate = (category, value) => {
     setFormDetails({
       ...formDetails,
       [category]: value,
     });
-    console.log(formDetails);
   };
 
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-  //   setButtonText('Sending...');
-  //   let response = await fetch('http://localhost:5000/contact', {
-  //     method: 'POST',
-  //     headers: {
-  //       'Content-Type': 'application/json;charset=utf-8',
-  //     },
-  //     body: JSON.stringify(formDetails),
-  //   });
-  //   setButtonText('Send message');
-  //   let result = await response.json();
-  //   setFormDetails(formInitial);
-  //   if (result.code === 200) {
-  //     setStatus({
-  //       success: true,
-  //       message: 'We will contact you soon!',
-  //     });
-  //   } else {
-  //     setStatus({
-  //       success: false,
-  //       message: 'Something went wrong, please try again later',
-  //     });
-  //   }
-  // };
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setButtonText('Sending...');
+    //https://cors-anywhere.herokuapp.com/http://3.76.47.169/contact
+    let response = await fetch('https://thingproxy.freeboard.io/fetch/http://3.76.47.169/contact', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json;charset=utf-8',
+      },
+      body: JSON.stringify(formDetails),
+    });
+    setButtonText('Send message');
+    let result = await response.json();
+    setFormDetails(formInitial);
+    if (result.code === 200) {
+      setStatus({
+        success: true,
+        message: 'We will contact you soon!',
+      });
+    } else {
+      setStatus({
+        success: false,
+        message: 'Something went wrong, please try again later',
+      });
+    }
+  };
   return (
-   <motion.form initial={{y:200, opacity:0}} whileInView={{y:0, opacity:1}} transition={{delay:0.2, duration:0.4}} className="contact-us-form" onSubmit={timeSubmit}>
+    <motion.form
+      initial={{ y: 200, opacity: 0 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{ delay: 0.2, duration: 0.4 }}
+      className="contact-us-form"
+      onSubmit={handleSubmit}
+    >
       <div className="input-wrapper">
         <label>
           {' '}
@@ -121,11 +119,7 @@ const Form = () => {
         </label>
       </div>
       {status.message && <p>{status.message}</p>}
-      <motion.button
-
-        className="contact-us-button"
-        type="submit"
-      >
+      <motion.button className="contact-us-button" type="submit">
         <span>{buttonText}</span>
       </motion.button>
     </motion.form>

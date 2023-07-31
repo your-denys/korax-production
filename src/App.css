@@ -100,7 +100,7 @@ select:focus {
   display: none;
 }
 
-.mySwiper .swiper-wrapper {
+.App .mySwiper .swiper-wrapper {
   display: block !important;
   height: 100vh !important;
 }
@@ -155,7 +155,7 @@ background-color: #161616;
   .blocks-description {
     font-size: 24px;
   }
-  .mySwiper {
+  .App .mySwiper {
     display: none !important;
   }
   .app-mobile {

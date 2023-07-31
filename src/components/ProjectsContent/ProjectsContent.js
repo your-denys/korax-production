@@ -68,7 +68,7 @@ const ProjectsContent = () => {
           transition={{ duration: 0.6 }}
           className="projects-card card-4"
         >
-        <Link to="https://t.me/Crypto_AI_Analytics" >
+        <Link to="/premium" >
           <p>
             Introducing the Launch of 'Trading for Everyone' on
             Telegram

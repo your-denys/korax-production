@@ -1,0 +1,30 @@
+.premium-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* gap: 20px; */
+  margin-top: 30px;
+}
+.premium-subtitle {
+  font-size: 40px;
+  line-height: normal;
+}
+.premium-description {
+  font-size: 24px;
+  line-height: normal;
+}
+.premium-wrapper {
+  margin-top: 40px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+.premium-text {
+  width: 40%;
+  font-size: 17px;
+}
+.premium-content .border-dashed {
+  z-index: 2;
+}
