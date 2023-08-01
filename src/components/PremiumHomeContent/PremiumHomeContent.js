@@ -23,10 +23,9 @@ const PremiumHomeContent = () => {
         </p>
         <Video
           className="premium-video"
-          controls
+          controls={[]}
           width="60%"
           height="500px"
-          controlsList="nodownload"
         >
           <source src={video} type="video/mp4" />
         </Video>
