@@ -1,7 +1,8 @@
 import './PremiumHomeContent.css';
 import trading from '../../assets/tradnig.png';
 import video from '../../assets/phone-video.mp4';
-
+import { DefaultPlayer as Video } from 'react-html5video';
+import 'react-html5video/dist/styles.css'
 const PremiumHomeContent = () => {
   return (
     <section className="premium-content">
@@ -20,15 +21,15 @@ const PremiumHomeContent = () => {
           elit.Lorem ipsum dolor sit amet, consectetur adipiscing
           elit.
         </p>
-        <video
+        <Video
           className="premium-video"
-          src={video}
-          type="video/mp4"
           controls
           width="60%"
           height="500px"
           controlsList="nodownload"
-        />
+        >
+          <source src={video} type="video/mp4" />
+        </Video>
       </div>
     </section>
   );

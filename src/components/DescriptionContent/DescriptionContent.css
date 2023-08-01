@@ -14,7 +14,7 @@
   .description-img {
      max-width: 556px;
   }
-  .description-img img {
+  .description-img video {
       width: 100%;
   }
   @media screen and (max-width:992px) {
