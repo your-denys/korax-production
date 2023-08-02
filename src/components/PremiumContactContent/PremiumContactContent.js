@@ -21,8 +21,8 @@ const PremiumContactContent = () => {
         />
         <div className='premium-contact-content'>
             <p className='premium-contact-send'>Send a message:</p>
-            <a href='https://t.me/Korax_support' className='premium-contact-link'> Telegram: @korax_support</a>
             <a href='mailto:artificial.intelligence@korax.ai' className='premium-contact-link'> Email: artificial.intelligence@korax.ai</a>
+            <a href='https://t.me/Korax_support' className='premium-contact-link'> Telegram: @korax_support</a>
             <p className='premium-contact-question'>If you have any question, don’t hesitate to contact us.</p>
         </div>
       </div>
