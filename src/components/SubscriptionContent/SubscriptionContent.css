@@ -1,12 +1,7 @@
 .subscription .swiper-pagination {
   display: none;
 }
-.subscription .swiper-slide-content {
-  transition: transform 0.3s ease;
-}
-.subscription .swiper-slide:not(.swiper-slide-active) {
-  transform: scale(0.96);
-}
+
 .subscription .swiper-wrapper {
   align-items: center;
 }
