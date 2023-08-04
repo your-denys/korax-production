@@ -26,6 +26,10 @@
   font-size: 20px;
   line-height: 133%;
 }
+.premium-content img {
+  width: 360px;
+  margin: 20px 0;
+}
 .premium-wrapper > div  {
   width:60%;
 }

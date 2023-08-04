@@ -3,22 +3,26 @@ import Modal from 'react-bootstrap/Modal';
 import qr from '../../assets/qr.jpg';
 import TransactionForm from './TransactionForm';
 import Spinner from 'react-bootstrap/Spinner';
+import Thanks from './Thanks';
 
 const TransactionWindow = ({ show, onHide, type }) => {
   const [load, setLoad] = useState(true);
   const [clicked, setClicked] = useState(false);
   const inputRef = useRef(null);
-
+  const [status, setStatus] = useState(false);
   const handleCopy = () => {
     if (inputRef.current) {
       inputRef.current.select();
       navigator.clipboard.writeText(inputRef.current.value);
-      setClicked(true)
+      setClicked(true);
       setTimeout(() => {
-        setClicked(false)
-       
+        setClicked(false);
       }, 3000);
     }
+  };
+
+  const handleStatus = (status) => {
+    return setStatus(status);
   };
 
   useEffect(() => {
@@ -39,6 +43,8 @@ const TransactionWindow = ({ show, onHide, type }) => {
         centered
       >
         <Modal.Header closeButton></Modal.Header>
+          {status ? <Thanks/> : 
+            <>
         <Modal.Body>
           <p className="transaction-coin">Coin</p>
           <p className="transaction-tether">Tether TRC 20 (USDT)</p>
@@ -63,12 +69,13 @@ const TransactionWindow = ({ show, onHide, type }) => {
             <button
               style={{ color: 'black' }}
               onClick={handleCopy}
-              className={clicked ? "clicked" : ''}
+              className={clicked ? 'clicked' : ''}
             ></button>
           </div>
 
-          <TransactionForm type={type} />
+          <TransactionForm type={type} statusform={handleStatus} />
         </Modal.Body>
+          
         <Modal.Footer>
           <p className="transaction-footer">
             USDT Chain Only <br />
@@ -80,6 +87,8 @@ const TransactionWindow = ({ show, onHide, type }) => {
             We are not responsible for lost funds.
           </p>
         </Modal.Footer>
+        </>
+        }
       </Modal>
     </div>
   );

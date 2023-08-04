@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import './SubscriptionContent.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -11,10 +11,42 @@ const SubscriptionContent = () => {
   const [modalShow, setModalShow] = useState(false);
   const [typeSubscr, setTypeSubscr] = useState('');
 
+  const [number, setNumber] = useState(
+    Number(localStorage.getItem('number')) || 200
+  );
+  const [lastUpdate, setLastUpdate] = useState(
+    new Date(localStorage.getItem('lastUpdate')) || new Date()
+  );
+
+  useEffect(() => {
+    const start = new Date('2023-07-04');
+    const end = new Date('2023-07-10');
+    const totalHours = (end - start) / 36e5;
+
+    const decrementPerHour = 200 / totalHours;
+    const interval = setInterval(() => {
+      setNumber((prevNumber) => {
+        const hoursSinceLastUpdate = (new Date() - lastUpdate) / 36e5;
+        const newNumber = Math.floor(
+          Math.max(
+            prevNumber - decrementPerHour * hoursSinceLastUpdate,
+            0
+          )
+        );
+        localStorage.setItem('number', newNumber);
+        localStorage.setItem('lastUpdate', new Date());
+        setLastUpdate(new Date());
+        return newNumber;
+      });
+    }, 36000);
+
+    return () => clearInterval(interval);
+  }, [lastUpdate]);
+
   const tagRefs = {
-    grey: useRef(null),
-    black: useRef(null),
-    green: useRef(null),
+    first: useRef(null),
+    second: useRef(null),
+    third: useRef(null),
   };
   const isMobile = window.innerWidth <= 820;
 
@@ -28,19 +60,17 @@ const SubscriptionContent = () => {
 
   return (
     <div className="subscription" id="premium">
-      <h2 className="subscription-title">
-        Lorem ipsum dolor sit amet consectetur
-      </h2>
-      {/* <motion.div
-        initial={{ width: 0 }}
-        whileInView={{ width: '100%' }}
-        transition={{ duration: 1 }}
-        className="border-dashed mb-5"
-      ></motion.div> */}
+      <h2 className="subscription-title">Purchase a subscription</h2>
+      <p className="subscription-text">
+        Choose the plan that works for you
+      </p>
+      <p className="subscription-offer">
+        Limited offer for 200 people / {number} left
+      </p>
       {isMobile ? (
         <Swiper
           slidesPerView={1.5}
-          spaceBetween={15}
+          spaceBetween={10}
           centeredSlides={true}
           pagination={{
             clickable: true,
@@ -49,16 +79,26 @@ const SubscriptionContent = () => {
           modules={[Pagination]}
           className="subscription-wrapper mySwiper"
         >
-          <SwiperSlide className="subscription-card grey-card">
+          <SwiperSlide className="subscription-card first-card">
             <div className="subscription-content">
-              <p className="subscription-days 7-days">7 Days</p>
-              <h2 ref={tagRefs.grey}>$39</h2>
+              <p className="subscription-days first">
+                1 Month subscription
+              </p>
+              <h2 ref={tagRefs.first}>
+              $78 <span className='slash'>/ <span className="old-price">149$</span></span>
+              </h2>
+              <p className="subscription-limited">
+                Limited opening discount
+              </p>
               <button
-                onClick={() => handleButtonClick('grey')}
+                onClick={() => handleButtonClick('first')}
                 className="subscription-button"
               >
-                Buy Now
+                Get Premium
               </button>
+              <a href="#statistic" className="subscription-link">
+                Switch to PNL last month
+              </a>
               <ul className="subscription-list">
                 <li>Lorem ipsum dolor sit.</li>
                 <li>Lorem ipsum dolor sit.</li>
@@ -66,16 +106,30 @@ const SubscriptionContent = () => {
               </ul>
             </div>
           </SwiperSlide>
-          <SwiperSlide className="subscription-card black-card">
+          <SwiperSlide className="subscription-card second-card">
             <div className="subscription-content">
-              <p className="subscription-days 1-month">1 Month</p>
-              <h2 ref={tagRefs.black}>$99</h2>
+              <p className="subscription-days second">
+                Half-Yearly subscription{' '}
+              </p>
+              <p className="uniq-offer">Uniq offer</p>
+              <h2 ref={tagRefs.second}>
+                $299{' '}
+                <span className="slash">
+                  / <span className="old-price">650$</span>
+                </span>
+              </h2>
+              <p className="subscription-limited">
+                Limited opening discount
+              </p>
               <button
-                onClick={() => handleButtonClick('black')}
+                onClick={() => handleButtonClick('second')}
                 className="subscription-button"
               >
-                Buy Now
+                Get Premium
               </button>
+              <a href="#statistic" className="subscription-link">
+                Switch to PNL last month
+              </a>
               <ul className="subscription-list">
                 <li>Lorem ipsum dolor sit.</li>
                 <li>Lorem ipsum dolor sit.</li>
@@ -83,16 +137,29 @@ const SubscriptionContent = () => {
               </ul>
             </div>
           </SwiperSlide>
-          <SwiperSlide className="subscription-card green-card">
+          <SwiperSlide className="subscription-card third-card">
             <div className="subscription-content">
-              <p className="subscription-days 7-days">1 Year</p>
-              <h2 ref={tagRefs.green}>$900</h2>
+              <p className="subscription-days third">
+                Yearly subscription
+              </p>
+              <h2 ref={tagRefs.third}>
+                $499{' '}
+                <span className="slash">
+                  / <span className="old-price">1000$</span>
+                </span>
+              </h2>
+              <p className="subscription-limited">
+                Limited opening discount
+              </p>
               <button
-                onClick={() => handleButtonClick('green')}
+                onClick={() => handleButtonClick('third')}
                 className="subscription-button"
               >
-                Buy Now
+                Get Premium
               </button>
+              <a href="#statistic" className="subscription-link">
+                Switch to PNL last month
+              </a>
               <ul className="subscription-list">
                 <li>Lorem ipsum dolor sit.</li>
                 <li>Lorem ipsum dolor sit.</li>
@@ -103,16 +170,29 @@ const SubscriptionContent = () => {
         </Swiper>
       ) : (
         <div className="subscription-wrapper">
-          <div className="subscription-card grey-card">
+          <div className="subscription-card first-card">
             <div className="subscription-content">
-              <p className="subscription-days 7-days">7 Days</p>
-              <h2 ref={tagRefs.grey}>$39</h2>
+              <p className="subscription-days first">
+                1 Month subscription
+              </p>
+              <h2 ref={tagRefs.first}>
+                $78{' '}
+                <span className="slash">
+                  / <span className="old-price">149$</span>
+                </span>
+              </h2>
+              <p className="subscription-limited">
+                Limited opening discount
+              </p>
               <button
-                onClick={() => handleButtonClick('grey')}
+                onClick={() => handleButtonClick('first')}
                 className="subscription-button"
               >
-                Buy Now
+                Get Premium
               </button>
+              <a href="#statistic" className="subscription-link">
+                Switch to PNL last month
+              </a>
               <ul className="subscription-list">
                 <li>Lorem ipsum dolor sit.</li>
                 <li>Lorem ipsum dolor sit.</li>
@@ -120,16 +200,30 @@ const SubscriptionContent = () => {
               </ul>
             </div>
           </div>
-          <div className="subscription-card black-card">
+          <div className="subscription-card second-card">
             <div className="subscription-content">
-              <p className="subscription-days 1-month">1 Month</p>
-              <h2 ref={tagRefs.black}>$99</h2>
+              <p className="subscription-days second">
+                Half-Yearly subscription{' '}
+              </p>
+              <p className="uniq-offer">Uniq offer</p>
+              <h2 ref={tagRefs.second}>
+                $299{' '}
+                <span className="slash">
+                  / <span className="old-price">650$</span>
+                </span>
+              </h2>
+              <p className="subscription-limited">
+                Limited opening discount
+              </p>
               <button
-                onClick={() => handleButtonClick('black')}
+                onClick={() => handleButtonClick('second')}
                 className="subscription-button"
               >
-                Buy Now
+                Get Premium
               </button>
+              <a href="#statistic" className="subscription-link">
+                Switch to PNL last month
+              </a>
               <ul className="subscription-list">
                 <li>Lorem ipsum dolor sit.</li>
                 <li>Lorem ipsum dolor sit.</li>
@@ -137,16 +231,29 @@ const SubscriptionContent = () => {
               </ul>
             </div>
           </div>
-          <div className="subscription-card green-card">
+          <div className="subscription-card third-card">
             <div className="subscription-content">
-              <p className="subscription-days 7-days">1 Year</p>
-              <h2 ref={tagRefs.green}>$900 </h2>
+              <p className="subscription-days third">
+                Yearly subscription
+              </p>
+              <h2 ref={tagRefs.third}>
+                $499{' '}
+                <span className="slash">
+                  / <span className="old-price">1000$</span>
+                </span>
+              </h2>
+              <p className="subscription-limited">
+                Limited opening discount
+              </p>
               <button
-                onClick={() => handleButtonClick('green')}
+                onClick={() => handleButtonClick('third')}
                 className="subscription-button"
               >
-                Buy Now
+                Get Premium
               </button>
+              <a href="#statistic" className="subscription-link">
+                Switch to PNL last month
+              </a>
               <ul className="subscription-list">
                 <li>Lorem ipsum dolor sit.</li>
                 <li>Lorem ipsum dolor sit.</li>
@@ -157,7 +264,7 @@ const SubscriptionContent = () => {
         </div>
       )}
       <TransactionWindow
-        type = {typeSubscr}
+        type={typeSubscr}
         show={modalShow}
         onHide={() => setModalShow(false)}
       />

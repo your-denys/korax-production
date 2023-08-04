@@ -133,6 +133,15 @@
   opacity: 1;
   transition: opacity 0.3s ease;
 }
+.thanks-content {
+  color: #161616;
+  background-color: #fff;
+  text-align: center;
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 40px;
+  display: block;
+}
 @media screen and (max-width: 820px) {
   .modal-content {
     padding-left: 0;
