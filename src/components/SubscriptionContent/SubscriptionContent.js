@@ -12,36 +12,23 @@ const SubscriptionContent = () => {
   const [typeSubscr, setTypeSubscr] = useState('');
 
   const [number, setNumber] = useState(
-    Number(localStorage.getItem('number')) || 200
-  );
-  const [lastUpdate, setLastUpdate] = useState(
-    new Date(localStorage.getItem('lastUpdate')) || new Date()
+    Number(localStorage.getItem('number')) || 70
   );
 
   useEffect(() => {
-    const start = new Date('2023-07-04');
-    const end = new Date('2023-07-10');
-    const totalHours = (end - start) / 36e5;
+    if (number > 16) {
+      const interval = setInterval(() => {
+        setNumber((prevNumber) => {
+          const newNumber = Math.floor(Math.max(prevNumber - 18, 0));
+          localStorage.setItem('number', newNumber);
 
-    const decrementPerHour = 200 / totalHours;
-    const interval = setInterval(() => {
-      setNumber((prevNumber) => {
-        const hoursSinceLastUpdate = (new Date() - lastUpdate) / 36e5;
-        const newNumber = Math.floor(
-          Math.max(
-            prevNumber - decrementPerHour * hoursSinceLastUpdate,
-            0
-          )
-        );
-        localStorage.setItem('number', newNumber);
-        localStorage.setItem('lastUpdate', new Date());
-        setLastUpdate(new Date());
-        return newNumber;
-      });
-    }, 36000);
+          return newNumber;
+        });
+      }, 15000);
 
-    return () => clearInterval(interval);
-  }, [lastUpdate]);
+      return () => clearInterval(interval);
+    } else return;
+  }, [number]);
 
   const tagRefs = {
     first: useRef(null),
@@ -85,7 +72,10 @@ const SubscriptionContent = () => {
                 1 Month subscription
               </p>
               <h2 ref={tagRefs.first}>
-              $78 <span className='slash'>/ <span className="old-price">149$</span></span>
+                $78{' '}
+                <span className="slash">
+                  / <span className="old-price">149$</span>
+                </span>
               </h2>
               <p className="subscription-limited">
                 Limited opening discount
