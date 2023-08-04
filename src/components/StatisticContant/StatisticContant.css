@@ -28,7 +28,9 @@
   margin: auto;
 }
 .modal-statistic .btn-close {
+  background-image: url('../../assets/close.svg');
   opacity: 1 !important;
+
 }
 
 @media screen and (max-width: 820px) {
