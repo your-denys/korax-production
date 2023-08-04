@@ -14,13 +14,13 @@
   align-items: center;
   justify-content:center;
 }
-.modal-content {
+.platform .modal-content {
   padding: 0 40px;
   width: 70% !important;
   margin: 0 auto;
 }
 
-.modal-title {
+.platform .modal-title {
   color: white;
   font-size: 3.5rem !important;
   font-weight: 600 !important;

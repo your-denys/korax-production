@@ -1,6 +1,7 @@
 import React from 'react';
 import './DescriptionContent.css';
-import video from '../../assets/video.webm';
+import video from '../../assets/phone-video.mp4';
+
 
 const DescriptionContent = () => {
   return (
