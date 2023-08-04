@@ -27,6 +27,9 @@
 .modal-statistic .modal-fullscreen .modal-body img {
   margin: auto;
 }
+.modal-statistic .btn-close {
+  opacity: 1 !important;
+}
 
 @media screen and (max-width: 820px) {
   .statistic-title {
