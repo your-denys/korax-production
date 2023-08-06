@@ -47,12 +47,12 @@ const SubscriptionContent = () => {
 
   return (
     <div className="subscription" id="premium">
-      <h2 className="subscription-title">Purchase a subscription</h2>
+      <h2 className="subscription-title">Subscription plans</h2>
       <p className="subscription-text">
         Choose the plan that works for you
       </p>
       <p className="subscription-offer">
-        Limited offer for 200 people / {number} left
+        Limited opening offer for 200 people / {number} left
       </p>
       {isMobile ? (
         <Swiper
@@ -90,9 +90,10 @@ const SubscriptionContent = () => {
                 Switch to PNL last month
               </a>
               <ul className="subscription-list">
-                <li>Lorem ipsum dolor sit.</li>
-                <li>Lorem ipsum dolor sit.</li>
-                <li>Lorem ipsum dolor sit.</li>
+                <li>Full scope AI Crypto Signals</li>
+                <li>AI Urgently News</li>
+                <li>Technical AI Analysis Market</li>
+                <li>Personality Premium Support</li>
               </ul>
             </div>
           </SwiperSlide>
@@ -121,9 +122,10 @@ const SubscriptionContent = () => {
                 Switch to PNL last month
               </a>
               <ul className="subscription-list">
-                <li>Lorem ipsum dolor sit.</li>
-                <li>Lorem ipsum dolor sit.</li>
-                <li>Lorem ipsum dolor sit.</li>
+                <li>Full scope AI Crypto Signals</li>
+                <li>AI Urgently News</li>
+                <li>Technical AI Analysis Market</li>
+                <li>Personality Premium Support</li>
               </ul>
             </div>
           </SwiperSlide>
@@ -151,9 +153,10 @@ const SubscriptionContent = () => {
                 Switch to PNL last month
               </a>
               <ul className="subscription-list">
-                <li>Lorem ipsum dolor sit.</li>
-                <li>Lorem ipsum dolor sit.</li>
-                <li>Lorem ipsum dolor sit.</li>
+                <li>Full scope AI Crypto Signals</li>
+                <li>AI Urgently News</li>
+                <li>Technical AI Analysis Market</li>
+                <li>Personality Premium Support</li>
               </ul>
             </div>
           </SwiperSlide>
@@ -184,9 +187,10 @@ const SubscriptionContent = () => {
                 Switch to PNL last month
               </a>
               <ul className="subscription-list">
-                <li>Lorem ipsum dolor sit.</li>
-                <li>Lorem ipsum dolor sit.</li>
-                <li>Lorem ipsum dolor sit.</li>
+                <li>Full scope AI Crypto Signals</li>
+                <li>AI Urgently News</li>
+                <li>Technical AI Analysis Market</li>
+                <li>Personality Premium Support</li>
               </ul>
             </div>
           </div>
@@ -215,9 +219,10 @@ const SubscriptionContent = () => {
                 Switch to PNL last month
               </a>
               <ul className="subscription-list">
-                <li>Lorem ipsum dolor sit.</li>
-                <li>Lorem ipsum dolor sit.</li>
-                <li>Lorem ipsum dolor sit.</li>
+                <li>Full scope AI Crypto Signals</li>
+                <li>AI Urgently News</li>
+                <li>Technical AI Analysis Market</li>
+                <li>Personality Premium Support</li>
               </ul>
             </div>
           </div>
@@ -245,9 +250,10 @@ const SubscriptionContent = () => {
                 Switch to PNL last month
               </a>
               <ul className="subscription-list">
-                <li>Lorem ipsum dolor sit.</li>
-                <li>Lorem ipsum dolor sit.</li>
-                <li>Lorem ipsum dolor sit.</li>
+                <li>Full scope AI Crypto Signals</li>
+                <li>AI Urgently News</li>
+                <li>Technical AI Analysis Market</li>
+                <li>Personality Premium Support</li>
               </ul>
             </div>
           </div>

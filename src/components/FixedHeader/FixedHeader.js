@@ -4,7 +4,7 @@ import './FixedHeader.css';
 
 const FixedHeader = () => {
   const [displayedText, setDisplayedText] = useState('');
-  const text = '  July +430% with AI Trading For Everyone';
+  const text = '  July +115% with AI Trading For Everyone';
   useEffect(() => {
     let currentIndex = 0;
 

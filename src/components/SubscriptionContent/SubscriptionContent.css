@@ -11,7 +11,7 @@
 .subscription-title {
   text-align: center;
   color: #161616;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
   font-size: 48px;
   font-style: normal;
   font-weight: 600;
@@ -57,7 +57,7 @@
   cursor: pointer;
 }
 .subscription-link {
-  color: #837fd7;
+  color: #2891f9cc;
   font-size: 14px;
   position: relative;
   transition: all 1s solid;
@@ -76,22 +76,22 @@
   transform: translateY(50%);
 }
 .subscription-link:hover {
-  color: #837fd7;
+  color: #2891f9cc;
 }
 
 .subscription-text {
   color: #161616;
   font-size: 24px;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 .subscription-offer {
-  padding: 10px 14px;
+  padding: 10px 0;
   font-size: 18px;
   color: #d6d6d6;
   background-color: #161616;
   text-align: center;
-  width: 350px;
+  width: 450px;
   margin: 0 auto 30px;
   border-radius: 4px;
 }
@@ -112,10 +112,10 @@
 }
 
 .second-card button {
-  background-color: #837FD7;
+  background-color: #2891f9cc;
 }
 .second-card p {
-  color: #837FD7;
+  color: #2891f9cc;
 }
 .third-card {
   background-color: #161616;
@@ -125,10 +125,10 @@
 }
 
 .third-card button {
-  background-color: #B29959;
+  background-color: #E2C16D;
 }
 .third-card p {
-  color: #F2FF61;
+  color: #E2C16D;
 }
 .subscription-list {
   list-style: none;
@@ -203,5 +203,8 @@
 
   .subscription-card {
     padding: 30px 15px;
+  }
+  .subscription-offer {
+    width: 350px;
   }
 }

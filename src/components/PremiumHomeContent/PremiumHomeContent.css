@@ -10,11 +10,11 @@
   line-height: normal;
 }
 .premium-description {
-  font-size: 24px;
+  font-size: 20px;
   line-height: normal;
 }
 .premium-wrapper {
-  margin-top: 100px;
+  margin-top: 10px;
   margin-bottom: 50px;
   display: flex;
   align-items: center;
@@ -27,8 +27,8 @@
   line-height: 133%;
 }
 .premium-content img {
-  width: 360px;
-  margin: 20px 0;
+  width: 500px;
+  margin: 5px 0;
 }
 .premium-wrapper > div  {
   width:60%;
