@@ -23,9 +23,9 @@ const TransactionForm = ({ type, statusform }) => {
     setButtonText('Sending...');
     const requestData = { ...formDetails, type };
     const requestBody = JSON.stringify(requestData);
-    //https://cors-anywhere.herokuapp.com/http://3.76.47.169/contact
+    //https://cors-anywhere.herokuapp.com/http://3.76.47.169/subscription
     let response = await fetch(
-      'https://thingproxy.freeboard.io/fetch/http://3.76.47.169/subscription',
+      'https://cors-anywhere.herokuapp.com/http://3.76.47.169/subscription',
       {
         method: 'POST',
         headers: {

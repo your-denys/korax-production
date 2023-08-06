@@ -6,10 +6,16 @@
   }
   .description-text {
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 600;
     max-width: 500px;
+  }
+  .description-text span {
+    display: block;
+    font-size: 20px;
+    font-weight:400;
+    margin-top: 20px;
   }
   .description-img {
      max-width: 556px;

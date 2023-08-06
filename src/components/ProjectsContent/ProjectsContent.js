@@ -68,7 +68,7 @@ const ProjectsContent = () => {
           transition={{ duration: 0.6 }}
           className="projects-card card-4"
         >
-        <Link to="/premium" >
+        <Link to="/trading-for-everyone" >
           <p>
             Introducing the Launch of 'Trading for Everyone' on
             Telegram

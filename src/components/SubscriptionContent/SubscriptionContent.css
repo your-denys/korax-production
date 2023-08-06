@@ -206,5 +206,7 @@
   }
   .subscription-offer {
     width: 350px;
+    padding: 10px;
+    font-size: 16px;
   }
 }

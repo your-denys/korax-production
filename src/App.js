@@ -10,11 +10,11 @@ function App() {
 
   return (
     <div>
-        <ScrollToTop/>
+      <ScrollToTop/>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/platform" element={<LogIn />} />
-        <Route path="/premium" element={<PremiumPage />} />
+        <Route path="/trading-for-everyone" element={<PremiumPage />} />
       </Routes>
     </div>
    

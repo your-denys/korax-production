@@ -47,7 +47,7 @@ const SubscriptionContent = () => {
 
   return (
     <div className="subscription" id="premium">
-      <h2 className="subscription-title">Subscription plans</h2>
+      <h2 className="subscription-title">Subscription Plans</h2>
       <p className="subscription-text">
         Choose the plan that works for you
       </p>

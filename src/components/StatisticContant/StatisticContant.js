@@ -14,7 +14,9 @@ const StatisticContant = () => {
   }
   return (
     <section className="statistic">
-      <h2 className="statistic-title">Lorem ipsum dolor sit amet</h2>
+      <h2 className="statistic-title">
+        Last Month's Statistics for "Trading For Everyone
+      </h2>
       <motion.div
         initial={{ width: 0 }}
         whileInView={{ width: '100%' }}
@@ -31,22 +33,27 @@ const StatisticContant = () => {
         </button>
 
         <Modal
-        className='modal-statistic'
+          className="modal-statistic"
           show={show}
           fullscreen={fullscreen}
           onHide={() => setShow(false)}
         >
-          <Modal.Header closeButton/>
-          <Modal.Body><img
-            style={{width: '100%'}}
-            src={statisticImg}
-            alt="Statistic"
-          /></Modal.Body>
+          <Modal.Header closeButton />
+          <Modal.Body>
+            <img
+              style={{ width: '100%' }}
+              src={statisticImg}
+              alt="Statistic"
+            />
+          </Modal.Body>
         </Modal>
       </div>
       <p className="statistic-text">
-        Lorem ipsum dolor sit amet, lorem ipsum dolor sit amet, lorem
-        ipsum dolor sit amet
+        In the last month, Korax AI in the 'Trading For Everyone'
+        suite has demonstrated a secure profit of +115.57%. This
+        allows all of you to start profiting in the crypto market with
+        AI as of today. Don't miss your chance to increase your
+        portfolio every month.
       </p>
     </section>
   );
