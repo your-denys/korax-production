@@ -15,7 +15,7 @@ const StatisticContant = () => {
   return (
     <section className="statistic">
       <h2 className="statistic-title">
-        Last Month's Statistics for "Trading For Everyone
+        Last Month's Statistics for <br/>"Trading For Everyone
       </h2>
       <motion.div
         initial={{ width: 0 }}

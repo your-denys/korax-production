@@ -1,5 +1,5 @@
 import './PremiumHomeContent.css';
-import trading from '../../assets/tradnig.jpg';
+import trading from '../../assets/tradnig.png';
 import video from '../../assets/phone-video.mp4';
 import { DefaultPlayer as Video } from 'react-html5video';
 import 'react-html5video/dist/styles.css';
