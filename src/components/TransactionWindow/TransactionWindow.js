@@ -79,9 +79,6 @@ const TransactionWindow = ({ show, onHide, type }) => {
         <Modal.Footer>
           <p className="transaction-footer">
             USDT Chain Only <br />
-            Minimum Deposit: 0.00500000 USDT
-            <br />
-            Confirmations Required: 12 <br />
             Please do not deposit invalid assets to this address.
             <br />
             We are not responsible for lost funds.

@@ -26,12 +26,6 @@
   width: 100% !important;
   height: auto;
 }
-/* .modal-statistic .modal-fullscreen .modal-body {
-  display: flex;
-}
-.modal-statistic .modal-fullscreen .modal-body img {
-  margin: auto;
-} */
 .modal-statistic .btn-close {
   background-image: url('../../assets/close.svg');
   opacity: 1 !important;
