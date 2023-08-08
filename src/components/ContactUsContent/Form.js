@@ -23,10 +23,9 @@ const Form = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setButtonText('Sending...');
-    // https://thingproxy.freeboard.io/fetch/http://3.76.47.169/contact
-    //https://cors-anywhere.herokuapp.com/http://3.76.47.169/contact
-    let response = await fetch('https://cors-anywhere.herokuapp.com/http://3.76.47.169/contact', {
+    let response = await fetch('http://3.76.47.169/contact', {
       method: 'POST',
+      // mode: 'cors',
       headers: {
         'Content-Type': 'application/json;charset=utf-8',
       },

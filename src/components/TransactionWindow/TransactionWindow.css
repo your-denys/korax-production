@@ -4,12 +4,12 @@
 .transaction-coin {
   color: #161616;
   font-family: 'Consolas';
-  font-size: 17px;
+  font-size: 15px;
 }
 .transaction-tether {
   margin-top: 5px;
   color: #161616;
-  font-size: 17px;
+  font-size: 15px;
   position: relative;
   padding-left: 26px;
   font-weight: 600;
@@ -24,18 +24,18 @@
 }
 .transaction-img {
   margin: 20px auto 10px;
-  width: 190px;
+  width: 160px;
   display: block;
 }
 .transaction-deposit {
   color: #161616;
   font-family: 'Consolas';
-  font-size: 17px;
+  font-size: 15px;
   margin-bottom: 5px;
 }
 .transaction-address {
   color: #161616;
-  font-size: 21px;
+  font-size: 18px;
   font-weight: 600;
   display: block;
   width: 100%;
@@ -50,7 +50,7 @@
   align-items: flex-start;
 }
 .transaction-wrapper label {
-  font-size: 17px;
+  font-size: 15px;
   font-family: 'Consolas';
   color: #161616;
   margin-bottom: 10px;
@@ -64,7 +64,7 @@
   padding-top: 4px;
   padding-bottom: 2px;
   padding-left: 8px;
-  font-size: 20px;
+  font-size: 17px;
   margin-bottom: 15px;
 }
 .transaction-button {
@@ -73,7 +73,7 @@
   display: block;
   margin: 0 auto;
   border-radius: 5px;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
 }
 .modal-header {
@@ -82,7 +82,7 @@
 }
 .transaction-footer {
     color: #161616;
-    font-size: 14px;
+    font-size: 13px;
 }
 .modal-footer {
     padding-top: 15px;
@@ -91,8 +91,8 @@
     margin: 0 auto;
     border-right-color: #161616;
     display: block;
-    width: 152px;
-    height: 152px;
+    width: 122px;
+    height: 122px;
 }
 .transaction-address {
     border: none;
@@ -106,8 +106,8 @@
     padding-right: 5px;
 }
 .copy-input button {
-    width: 19px;
-    height: 19px;
+    width: 17px;
+    height: 17px;
     background-image: url('../../assets/copy.svg');
     background-repeat: no-repeat;
     background-size: contain;
@@ -149,9 +149,14 @@
   }
   .transaction-img {
     margin: 20px auto 10px;
-    width: 150px;
+    width: 140px;
     display: block;
   }
+  .copy-input button {
+    width: 15px;
+    height: 15px;
+
+}
 }
 @media screen and (max-width: 992px) {
   .modal-body {
@@ -166,9 +171,10 @@
     width: 90% !important;
   }
   .transaction-address {
-    font-size: 15px;
+    font-size: 14px;
   }
   .transaction-button {
-    font-size: 17px;
+    font-size: 16px;
   }
+
 }

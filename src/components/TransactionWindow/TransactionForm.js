@@ -23,11 +23,11 @@ const TransactionForm = ({ type, statusform }) => {
     setButtonText('Sending...');
     const requestData = { ...formDetails, type };
     const requestBody = JSON.stringify(requestData);
-    //https://cors-anywhere.herokuapp.com/http://3.76.47.169/subscription
     let response = await fetch(
-      'https://cors-anywhere.herokuapp.com/http://3.76.47.169/subscription',
+      'http://3.76.47.169/subscription',
       {
         method: 'POST',
+        mode: 'cors',
         headers: {
           'Content-Type': 'application/json;charset=utf-8',
         },
