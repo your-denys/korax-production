@@ -24,7 +24,7 @@ const TransactionForm = ({ type, statusform }) => {
     const requestData = { ...formDetails, type };
     const requestBody = JSON.stringify(requestData);
     let response = await fetch(
-      'http://3.76.47.169/subscription',
+      'https://korax-back.onrender.com/subscription',
       {
         method: 'POST',
         mode: 'cors',

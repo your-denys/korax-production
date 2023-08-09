@@ -3,7 +3,7 @@ import trading from '../../assets/tradnig.png';
 import videoMob from '../../assets/welcomeMob.mp4';
 import video from '../../assets/welcome.mp4';
 import { DefaultPlayer as Video } from 'react-html5video';
-import poster from '../../assets/poster.png';
+import poster from '../../assets/poster.jpg';
 import 'react-html5video/dist/styles.css';
 
 const PremiumHomeContent = () => {
@@ -12,7 +12,7 @@ const PremiumHomeContent = () => {
     <section className="premium-content">
       <img src={trading} alt="Trading for everyone" />
       <p className="premium-description">
-        User-friendly AI tool for successful trading
+      Korax Presents new user-Friendly ai tool for succesful trading
       </p>
       <div className="premium-wrapper">
         <p className="premium-text">
@@ -25,8 +25,6 @@ const PremiumHomeContent = () => {
             className="premium-video"
             controls={[]}
             poster={poster}
-            width="60%"
-            height="500px"
           >
             <source src={videoMob} type="video/mp4" />
           </Video>
@@ -35,8 +33,6 @@ const PremiumHomeContent = () => {
             className="premium-video"
             controls={[]}
             poster={poster}
-            width="60%"
-            height="500px"
           >
             <source src={video} type="video/mp4" />
           </Video>

@@ -23,7 +23,7 @@ const Form = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setButtonText('Sending...');
-    let response = await fetch('http://3.76.47.169/contact', {
+    let response = await fetch('https://korax-back.onrender.com/contact', {
       method: 'POST',
       // mode: 'cors',
       headers: {

@@ -29,12 +29,12 @@
     font-size: 17px;
     padding: 17px 15px;
     background-color: #fff;
-    color: #368f64;
+    color: #161616;
     border-radius: 7px;
 }
 .fixed-button:hover {
     cursor: pointer;
-    color: #368f64;
+    color: #161616;
 
 }
 

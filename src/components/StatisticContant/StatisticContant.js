@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import statisticImg from '../../assets/statistic-img.png';
+import statistic from '../../assets/statistic.png';
 import statisticImgMob from '../../assets/statistic-img-mob.png';
 import './StatisticContant.css';
 import Modal from 'react-bootstrap/Modal';
@@ -32,7 +33,7 @@ const StatisticContant = () => {
           <button onClick={() => handleShow(true)}>
             <img
               className="statistic-img"
-              src={statisticImg}
+              src={statistic}
               alt="Statistic"
             />
           </button>

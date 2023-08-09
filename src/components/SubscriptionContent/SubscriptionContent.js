@@ -12,19 +12,21 @@ const SubscriptionContent = () => {
   const [typeSubscr, setTypeSubscr] = useState('');
 
   const [number, setNumber] = useState(
-    Number(localStorage.getItem('number')) || 70
+    Number(localStorage.getItem('number')) || 98
   );
-
+  
   useEffect(() => {
-    if (number > 16) {
+    if (number > 27) {
+      const delay = Math.floor(Math.random() * (10000 - 6000 + 1)) + 6000;
+      console.log(delay);
       const interval = setInterval(() => {
         setNumber((prevNumber) => {
-          const newNumber = Math.floor(Math.max(prevNumber - 18, 0));
+          const newNumber = Math.floor(Math.max(prevNumber - 1, 0));
           localStorage.setItem('number', newNumber);
 
           return newNumber;
         });
-      }, 15000);
+      }, delay);
 
       return () => clearInterval(interval);
     } else return;
@@ -87,7 +89,7 @@ const SubscriptionContent = () => {
                 Get Premium
               </button>
               <a href="#statistic" className="subscription-link">
-                Switch to PNL last month
+                Show last month PNL
               </a>
               <ul className="subscription-list">
                 <li>Full scope AI Crypto Signals</li>
@@ -119,7 +121,7 @@ const SubscriptionContent = () => {
                 Get Premium
               </button>
               <a href="#statistic" className="subscription-link">
-                Switch to PNL last month
+                Show last month PNL
               </a>
               <ul className="subscription-list">
                 <li>Full scope AI Crypto Signals</li>
@@ -150,7 +152,7 @@ const SubscriptionContent = () => {
                 Get Premium
               </button>
               <a href="#statistic" className="subscription-link">
-                Switch to PNL last month
+                Show last month PNL
               </a>
               <ul className="subscription-list">
                 <li>Full scope AI Crypto Signals</li>
@@ -184,7 +186,7 @@ const SubscriptionContent = () => {
                 Get Premium
               </button>
               <a href="#statistic" className="subscription-link">
-                Switch to PNL last month
+                Show last month PNL
               </a>
               <ul className="subscription-list">
                 <li>Full scope AI Crypto Signals</li>
@@ -216,7 +218,7 @@ const SubscriptionContent = () => {
                 Get Premium
               </button>
               <a href="#statistic" className="subscription-link">
-                Switch to PNL last month
+                Show last month PNL
               </a>
               <ul className="subscription-list">
                 <li>Full scope AI Crypto Signals</li>
@@ -247,7 +249,7 @@ const SubscriptionContent = () => {
                 Get Premium
               </button>
               <a href="#statistic" className="subscription-link">
-                Switch to PNL last month
+                Show last month PNL
               </a>
               <ul className="subscription-list">
                 <li>Full scope AI Crypto Signals</li>

@@ -12,26 +12,32 @@
 .premium-description {
   font-size: 20px;
   line-height: normal;
+  text-align: center;
+  width: 90%;
+  text-transform: capitalize;
+
 }
 .premium-wrapper {
   margin-top: 40px;
   margin-bottom: 50px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  flex-direction: column-reverse;
   gap: 40px;
 }
 .premium-text {
-  width: 40%;
+  width: 100%;
   font-size: 20px;
   line-height: 133%;
+  text-align: center;
+
 }
 .premium-content img {
   width: 500px;
   margin: 5px 0;
 }
-.premium-wrapper > div  {
-  width:60%;
+.premium-wrapper > div {
+  width: 90%;
 }
 .rh5v-DefaultPlayer_component {
   background-color: transparent !important;
@@ -51,7 +57,7 @@
     text-align: center;
   }
   .premium-wrapper {
-    margin-top: 70px;
+    margin-top: 30px;
     margin-bottom: 50px;
     flex-direction: column-reverse;
     align-items: center;
@@ -60,9 +66,8 @@
   }
   .premium-text {
     width: 100%;
-    font-size: 20px;
     line-height: 133%;
-    font-size: 17px;
+    font-size: 14px;
   }
 
   .premium-wrapper > div {
