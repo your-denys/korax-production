@@ -79,7 +79,7 @@
   color: #48E498;
 }
 .offer-red {
-  color: #e04171!important;
+  color: #e04171;
 }
 .subscription-text {
   color: #161616;
@@ -97,9 +97,7 @@
   margin: 0 auto 30px;
   border-radius: 4px;
 }
-.subscription-offer span {
-  color: #48E498;
-}
+
 .first-card {
   background-color: #161616;
 }

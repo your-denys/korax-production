@@ -19,7 +19,7 @@ const StatisticContant = () => {
     <section className="statistic">
       <h2 className="statistic-title">
         Last Month's Statistics for <br />
-        "Trading For Everyone
+        "Trading For Everyone"
       </h2>
       <motion.div
         initial={{ width: 0 }}
