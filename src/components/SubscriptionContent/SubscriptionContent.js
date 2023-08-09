@@ -52,7 +52,7 @@ const SubscriptionContent = () => {
         Choose the plan that works for you
       </p>
       <p className="subscription-offer">
-        Limited opening offer for 200 people / {number} left
+        Limited opening offer for <span>200 people </span>/ <span className='offer-red'>{number} left </span>
       </p>
       {isMobile ? (
         <Swiper

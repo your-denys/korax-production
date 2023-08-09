@@ -40,6 +40,7 @@
           font-size: 27px;
           max-width: 100%;
           width: 100%;
+          text-align: center;
       }
       .description-text span {
         font-size: 17px;

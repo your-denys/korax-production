@@ -6,7 +6,7 @@ import Accordion from 'react-bootstrap/Accordion';
 const FaqContent = () => {
   return (
     <section className="faq">
-      <p className="blocks-title mb-4">FAQ</p>
+      <p className="blocks-title mb-4" style={{fontSize:'30px'}}>FAQ</p>
       <motion.div
         viewport={{ amount: 0.3 }}
         initial={{ width: 0 }}

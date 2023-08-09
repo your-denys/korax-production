@@ -17,13 +17,17 @@
   max-width: 700px;
   margin: 40px auto 20px;
 }
+.statistic-text span {
+  color: #48E498;
+  font-weight: 600;
+}
 .modal-statistic .modal-dialog {
   display: flex !important;
   align-items: center;
 }
 .modal-statistic .modal-fullscreen .modal-content {
   background-color: transparent;
-  width: 100% !important;
+  width: 78% !important;
   height: auto;
 }
 .modal-statistic .btn-close {
@@ -43,5 +47,7 @@ display: flex;
   .statistic-text {
     font-size: 17px;
   }
-  
+  .statistic-responsive {
+    width: 95%;
+  }
 }
