@@ -10,11 +10,13 @@
   line-height: normal;
 }
 .premium-description {
-  font-size: 20px;
+  font-size: 22px;
   line-height: normal;
   text-align: center;
-  width: 90%;
+  width: 40%;
   text-transform: capitalize;
+  font-weight: 600;
+
 
 }
 .premium-wrapper {
@@ -26,11 +28,10 @@
   gap: 40px;
 }
 .premium-text {
-  width: 100%;
+  width: 80%;
   font-size: 20px;
   line-height: 133%;
   text-align: center;
-
 }
 .premium-content img {
   width: 500px;
@@ -49,12 +50,14 @@
     margin-bottom: 20px;
   }
   .premium-content img {
-    width: 360px;
+    width: 100%;
     margin-bottom: 15px;
   }
   .premium-description {
-    font-size: 17px;
+    font-size: 22px;
     text-align: center;
+    margin-top: 30px;
+    width: 100%;
   }
   .premium-wrapper {
     margin-top: 30px;
@@ -67,7 +70,7 @@
   .premium-text {
     width: 100%;
     line-height: 133%;
-    font-size: 14px;
+    font-size: 17px;
   }
 
   .premium-wrapper > div {
