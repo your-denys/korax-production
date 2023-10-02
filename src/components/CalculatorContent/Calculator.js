@@ -8,10 +8,21 @@ const Calculator = () => {
   const [month, setMonth] = useState(12);
   const percentPerDay = 0.5;
 
+  //   const calculateProfit = () => {
+  //     const earn = (amount / 100) * percentPerDay * 30 * month;
+  //     const finalAmount = Number(earn) + Number(amount);
+  //     return finalAmount.toFixed(0); // Округляем до двух знаков после запятой
+  //   };
+
   const calculateProfit = () => {
-    const earn = (amount / 100) * percentPerDay * 30 * month;
-    const finalAmount = Number(earn) + Number(amount);
-    return finalAmount.toFixed(0); // Округляем до двух знаков после запятой
+    let finalAmount = amount;
+
+    for (let i = 0; i < month; i++) {
+      const earn = (finalAmount / 100) * percentPerDay * 30;
+      finalAmount = Number(finalAmount) + Number(earn);
+    }
+
+    return finalAmount.toFixed(0);
   };
 
   function valueLabelFormat(value) {
@@ -31,7 +42,7 @@ const Calculator = () => {
   return (
     <div className="calculator-wrapper">
       <div className="amount-wrapper">
-        <div className='calculator-text-wrapper'>
+        <div className="calculator-text-wrapper">
           <h4 className="calculator-subtitle">
             Enter Initial Investment
           </h4>
