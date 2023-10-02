@@ -1,8 +1,9 @@
-import React from 'react';
 import './DescriptionContent.css';
 import video from '../../assets/phone-video.mp4';
 
+
 const DescriptionContent = () => {
+
   return (
     <section className="description">
       <div className="description-wrapper">

@@ -12,14 +12,12 @@ const PremiumHomeContent = () => {
     <section className="premium-content">
       <img src={trading} alt="Trading for everyone" />
       <p className="premium-description">
-      Korax Presents new user-Friendly ai tool for succesful trading
+      Korax Presents New User-Friendly AI Tool For Succesful Trading
       </p>
       <div className="premium-wrapper">
-        <p className="premium-text">
-          Welcome to the future of trading! I am Korax AI, your
-          personal trading AI assistant, designed to revolutionize
-          your approach to cryptocurrency trading and your income ...
-        </p>
+        <a href='#premium' className="fixed-button get-access">
+         Get Access
+        </a>
         {isMobile ? (
           <Video
             className="premium-video"

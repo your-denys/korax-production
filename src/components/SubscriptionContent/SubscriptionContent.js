@@ -12,12 +12,13 @@ const SubscriptionContent = () => {
   const [typeSubscr, setTypeSubscr] = useState('');
 
   const [number, setNumber] = useState(
-    Number(localStorage.getItem('number')) || 98
+    Number(localStorage.getItem('number')) || 87
   );
-  
+
   useEffect(() => {
-    if (number > 27) {
-      const delay = Math.floor(Math.random() * (10000 - 6000 + 1)) + 6000;
+    if (number > 4) {
+      const delay =
+        Math.floor(Math.random() * (10000 - 6000 + 1)) + 6000;
       console.log(delay);
       const interval = setInterval(() => {
         setNumber((prevNumber) => {
@@ -53,9 +54,10 @@ const SubscriptionContent = () => {
       <p className="subscription-text">
         Choose the plan that works for you
       </p>
-      <p className="subscription-offer">
-        Limited opening offer for 200 people / <span className='offer-red'>{number} left </span>
-      </p>
+      {/* <p className="subscription-offer">
+        Limited opening offer for 100 people /{' '}
+        <span className="offer-red">{number} left </span>
+      </p> */}
       {isMobile ? (
         <Swiper
           slidesPerView={1.5}
@@ -74,7 +76,7 @@ const SubscriptionContent = () => {
                 1 Month subscription
               </p>
               <h2 ref={tagRefs.first}>
-                $78{' '}
+                $79{' '}
                 <span className="slash">
                   / <span className="old-price">149$</span>
                 </span>
@@ -102,13 +104,13 @@ const SubscriptionContent = () => {
           <SwiperSlide className="subscription-card second-card">
             <div className="subscription-content">
               <p className="subscription-days second">
-                Half-Yearly subscription{' '}
+                7 Days subscription{' '}
               </p>
               <p className="uniq-offer">Uniq offer</p>
               <h2 ref={tagRefs.second}>
-                $299{' '}
+                $29{' '}
                 <span className="slash">
-                  / <span className="old-price">650$</span>
+                  / <span className="old-price">49$</span>
                 </span>
               </h2>
               <p className="subscription-limited">
@@ -137,7 +139,7 @@ const SubscriptionContent = () => {
                 Yearly subscription
               </p>
               <h2 ref={tagRefs.third}>
-                $499{' '}
+                $599{' '}
                 <span className="slash">
                   / <span className="old-price">1000$</span>
                 </span>
@@ -171,7 +173,7 @@ const SubscriptionContent = () => {
                 1 Month subscription
               </p>
               <h2 ref={tagRefs.first}>
-                $78{' '}
+                $79{' '}
                 <span className="slash">
                   / <span className="old-price">149$</span>
                 </span>
@@ -199,13 +201,13 @@ const SubscriptionContent = () => {
           <div className="subscription-card second-card">
             <div className="subscription-content">
               <p className="subscription-days second">
-                Half-Yearly subscription{' '}
+                7 Days subscription{' '}
               </p>
               <p className="uniq-offer">Uniq offer</p>
               <h2 ref={tagRefs.second}>
-                $299{' '}
-                <span className="slash">
-                  / <span className="old-price">650$</span>
+                $29{' '}
+               <span className="slash">
+                  / <span className="old-price">49$</span>
                 </span>
               </h2>
               <p className="subscription-limited">
@@ -234,7 +236,7 @@ const SubscriptionContent = () => {
                 Yearly subscription
               </p>
               <h2 ref={tagRefs.third}>
-                $499{' '}
+                $599{' '}
                 <span className="slash">
                   / <span className="old-price">1000$</span>
                 </span>
