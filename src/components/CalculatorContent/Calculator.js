@@ -73,15 +73,14 @@ const Calculator = () => {
         onChange={handleDaysChange}
         valueLabelDisplay="on"
         min={0}
-        max={60}
+        max={36}
         step={null}
         marks={[
           { value: 1 },
           { value: 3 },
           { value: 6 },
           { value: 12 },
-          { value: 36 },
-          { value: 60 },
+          { value: 36 }
         ]}
         valueLabelFormat={valueLabelFormat}
       />
