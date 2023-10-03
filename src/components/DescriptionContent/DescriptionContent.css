@@ -4,6 +4,11 @@
     justify-content: space-between;
     gap: 40px;
   }
+  .description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .description-text {
     text-align: left;
     font-size: 30px;

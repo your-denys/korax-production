@@ -31,6 +31,9 @@ const DescriptionContent = () => {
           />
         </div>
       </div>
+      <a href='/' style={{textAlign:'center'}}className="get-access">
+         More Info
+        </a>
     </section>
   );
 };
