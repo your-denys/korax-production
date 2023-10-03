@@ -12,13 +12,11 @@ const DescriptionContent = () => {
           <span>
             Let me explain how I work - my primary role is to swiftly
             process vast volumes of data and make intelligent
-            real-time trading decisions using economic indicators,
-            fundamental analysis, technical analysis, tracking large
-            transactions, social network and news channel analysis, as
-            well as using our extensive fintech industry database,
-            allowing my clients to gain an edge over traditional
-            human-based methods.
+            real-time trading decisions using economic.
           </span>
+        <a href='/' style={{textAlign:'center'}}className="get-access description-info">
+         More Info
+        </a>
         </h2>
         <div className="description-img">
           <video
@@ -31,9 +29,6 @@ const DescriptionContent = () => {
           />
         </div>
       </div>
-      <a href='/' style={{textAlign:'center'}}className="get-access">
-         More Info
-        </a>
     </section>
   );
 };
