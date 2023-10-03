@@ -32,8 +32,8 @@ const PremiumPageSecond = () => {
       <SubscriptionSecond/>
       <Description/>
       {/* <Statistic/> */}
-      <Faq/>
       <Calculator/>
+      <Faq/>
       <PremiumContact/>
     </div>
   );
