@@ -1,13 +1,13 @@
 .MuiSlider-valueLabel {
   top: 0 !important;
   transform: translateY(100%) !important;
-  background-color: #52c4bc !important;
+  background-color: #2ccd7e !important;
   border-radius: 20px !important;
   font-family: 'KulimPark' !important;
   font-size: 16px !important;
 }
 .MuiSlider-root {
-  color: #52c4bc !important;
+  color: #2ccd7e !important;
   height: 12px !important;
   width: 100% !important;
 }
@@ -83,7 +83,7 @@
 }
 .calculate-profit {
   padding-top: 10px;
-  color: #52c4bc;
+  color: #2ccd7e;
   font-weight: 600;
   font-size: 44px;
 }

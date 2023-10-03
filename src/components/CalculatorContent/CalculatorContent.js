@@ -7,7 +7,7 @@ const CalculatorContent = () => {
       <div className='calculator-content-text'>
         <h2 className="calculator-title">
           How much can{' '}
-          <span style={{ color: '#52c4bc' }}>I earn</span>
+          <span style={{ color: '#2ccd7e' }}>I earn</span>
         </h2>
         <p className="calculator-text">
           We add the percentage to the amount as the average of the

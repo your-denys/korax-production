@@ -15,7 +15,7 @@ const PremiumHomeContent = () => {
       Korax Presents New User-Friendly AI Tool For Succesful Trading
       </p>
       <div className="premium-wrapper">
-        <a href='#premium' className="fixed-button get-access">
+        <a href='#premium' className="get-access">
          Get Access
         </a>
         {isMobile ? (

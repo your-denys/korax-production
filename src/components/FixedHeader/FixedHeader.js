@@ -27,7 +27,7 @@ const FixedHeader = () => {
     <div className="fixed-wrapper">
       <div className="fixed-header">
         <img className="fixed-img" src={logo} alt="logo" />
-        <p className="fixed-text">Last month <span style={{color: '#52c4bc'}}>+35%</span> with AI Trading For Everyone</p>
+        <p className="fixed-text">Last month <span style={{color: '#2ccd7e'}}>+35%</span> with AI Trading For Everyone</p>
         {/* <p className="fixed-text">{displayText}</p> */}
         <a href="#premium" className="fixed-button">
           Get Started
