@@ -7,8 +7,8 @@ const PaymentChoose = ({card, crypto }) => {
     <div className="paymant-choose">
         <h5>Select a payment method</h5>
         <div className="payment-wrapper">
-            <button className='payment-button' onClick={crypto}><img src={tether} alt='' /></button>
-            <button className='payment-button' onClick={card}><img src={credit} alt='' /></button>
+            <button className='payment-button' onClick={crypto}><img src={tether} alt='' /><p>Cryptocurrency</p></button>
+            <button className='payment-button' onClick={card}><img src={credit} alt='' /><p>Credit Card</p></button>
         </div>
     </div>
   )
