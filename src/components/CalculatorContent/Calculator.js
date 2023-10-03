@@ -4,15 +4,9 @@ import { useState } from 'react';
 import Slider from '@mui/material/Slider';
 
 const Calculator = () => {
-  const [amount, setAmount] = useState(10000);
+  const [amount, setAmount] = useState(1000);
   const [month, setMonth] = useState(12);
   const percentPerDay = 0.5;
-
-  //   const calculateProfit = () => {
-  //     const earn = (amount / 100) * percentPerDay * 30 * month;
-  //     const finalAmount = Number(earn) + Number(amount);
-  //     return finalAmount.toFixed(0); // Округляем до двух знаков после запятой
-  //   };
 
   const calculateProfit = () => {
     let finalAmount = amount;
@@ -53,7 +47,6 @@ const Calculator = () => {
               type="number"
               placeholder={amount}
               onChange={handleAmountChange}
-              inputProps={{ min: 1 }}
             />
           </div>
         </div>

@@ -56,7 +56,7 @@ const ProjectsContent = () => {
           transition={{ duration: 0.6 }}
           className="projects-card card-3"
         >
-         <NavLink to="/trading-for-everyone/50">
+         <NavLink to="/platform">
           <p>
             Thrilling Alliance Revealed with a Leading FinTech Company
           </p>

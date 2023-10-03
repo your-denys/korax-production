@@ -39,7 +39,7 @@
   padding-right: 3px;
 }
 .calculator-subtitle {
-  color: #181818;
+  color: #161616;
   font-weight: 600;
 }
 .calculator-title {
@@ -52,14 +52,14 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 20px;
-  color: #181818;
+  color: #161616;
 }
 .input-enter {
   font-weight: 600;
   font-size: 44px;
   width: 75%;
   background-color: transparent;
-  border-bottom: 1px solid #181818;
+  border-bottom: 1px solid #161616;
   outline: 0;
   border-top: 0;
   border-right: 0;
@@ -70,7 +70,7 @@
   opacity: 0.3;
 }
 .calculator-subtext {
-  color: #181818;
+  color: #161616;
   text-align: center;
   font-size: 18px;
   margin-bottom: 10px;
