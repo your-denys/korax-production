@@ -11,13 +11,16 @@ const PremiumHomeContent = () => {
   return (
     <section className="premium-content">
       <img src={trading} alt="Trading for everyone" />
-      <p className="premium-description">
-      Korax Presents New User-Friendly AI Tool For Succesful Trading
+      <p className="premium-description pc">
+        Korax Presents New User-Friendly AI Tool For Succesful Trading
       </p>
       <div className="premium-wrapper">
         <a href='#premium' className="get-access">
          Get Access
         </a>
+      <p className="premium-description mob">
+        Korax Presents New User-Friendly AI Tool For Succesful Trading
+      </p>
         {isMobile ? (
           <Video
             className="premium-video"
