@@ -52,7 +52,8 @@
   border: 1px solid #fff;
 }
 .get-access:hover {
-  color: #fff;
+  color: #181818;
+  background-color: #fff;
 }
 
 @media screen and (max-width: 820px) {
