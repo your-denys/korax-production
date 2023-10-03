@@ -6,6 +6,7 @@ import SubscriptionSecond from './view/SubscriptionSecond/SubscriptionSecond';
 import Description from './view/Description/Description';
 import Faq from './view/Faq/Faq';
 import PremiumContact from './view/PremiumContact/PremiumContact';
+import Calculator from './view/Calculator/Calculator';
 
 const PremiumPageSecond = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -32,6 +33,7 @@ const PremiumPageSecond = () => {
       <Description/>
       {/* <Statistic/> */}
       <Faq/>
+      <Calculator/>
       <PremiumContact/>
     </div>
   );
